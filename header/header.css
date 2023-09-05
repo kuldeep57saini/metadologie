@@ -131,7 +131,23 @@ main {
         z-index: 5;
     }
 
-    /* ... */
+    .bar::before,
+.bar::after {
+    content: "";
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.bar::before {
+    top: -10px;
+}
+
+.bar::after {
+    top: 10px;
+}
 }
 
 .active {
