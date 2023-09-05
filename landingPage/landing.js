@@ -173,17 +173,14 @@ function createIntegrationCard(imageSrc, content, altText) {
         "size-large_1-of-3",
         "size-medium_1-of-2",
         "size-small_1-of-1",
-        "size-x-large_1-of-4"
+        "size-x-large_1-of-4",
     );
-
-    const p5 = document.createElement("div");
-    p5.classList.add("p-5");
 
     const integrationCard = document.createElement("div");
     integrationCard.classList.add("integration-card");
 
     const integrationCardBody = document.createElement("div");
-    integrationCardBody.classList.add("integration-card-body");
+    integrationCardBody.classList.add("integration-card-body", "height-100");
 
     const integrationCardImage = document.createElement("div");
     integrationCardImage.classList.add("integration-card-image");
@@ -206,16 +203,20 @@ function createIntegrationCard(imageSrc, content, altText) {
         console.log('clicked');
         console.log(e);
         targetElement.scrollIntoView({ behavior: "smooth" });
-});
+    });
 
-    integrationCardBody.appendChild(integrationCardImage);
-    integrationCardBody.appendChild(p);
-    integrationCardBody.appendChild(button);
+    const upperCardBody = document.createElement('div');
+    const lowerCardBody = document.createElement('div');
+    
+    upperCardBody.appendChild(integrationCardImage);
+    upperCardBody.appendChild(p);
+    lowerCardBody.appendChild(button);
+    integrationCardBody.appendChild(upperCardBody);
+    integrationCardBody.appendChild(lowerCardBody);
 
     integrationCard.appendChild(integrationCardBody);
 
-    p5.appendChild(integrationCard);
-    integrationCardBox.appendChild(p5);
+    integrationCardBox.appendChild(integrationCard);
 
     return integrationCardBox;
 }
