@@ -238,3 +238,14 @@ const openModal =(item)=>{
 function closeModal() {
     document.getElementById('myModal').style.display = 'none';
 }
+function validateForm() {
+
+    var submitButton = document.querySelector('input[type="submit"]');
+    var clickedElement = document.activeElement;
+
+    if (clickedElement === submitButton) {
+        return true;
+    } else {
+        return false;
+    }
+}
