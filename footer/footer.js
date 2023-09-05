@@ -96,7 +96,7 @@ class Footer extends HTMLElement{
                         </tr>
                         <tr>
                             <td><i class="fa fa-envelope"></i></td>
-                            <td><a href="#">Suppor@metadologie.com</a></td>
+                            <td><a href="#">Support@metadologie.com</a></td>
                         </tr>
                     </table>
 
@@ -128,7 +128,7 @@ class Footer extends HTMLElement{
                         </tr>
                         <tr>
                             <td><i class="fa fa-envelope"></i></td>
-                            <td><a href="#">Suppor@metadologie.com</a></td>
+                            <td><a href="#">Support@metadologie.com</a></td>
                         </tr>
                     </table>
 
