@@ -201,6 +201,10 @@ function createIntegrationCard(imageSrc, content, altText) {
     const button = document.createElement("button");
     button.classList.add("get-in-touch-button");
     button.textContent = "Get In Touch";
+    button.addEventListener("click", () => {
+        let targetElement = document.querySelector('.more-info-form-section');
+        targetElement.scrollIntoView({ behavior: "smooth" });
+});
 
     integrationCardBody.appendChild(integrationCardImage);
     integrationCardBody.appendChild(p);
