@@ -144,7 +144,7 @@ const integrationData = [
         content: "Zenkraft provides shipping solutions that integrate with Salesforce, enabling businesses to manage shipping, tracking, and returns seamlessly."
     },
     {
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Visual Compliance.png",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Visual_Compliance.png",
         altText: "Visual Compliance",
         content: "Visual Compliance offers export compliance solutions, helping businesses ensure compliance with international trade regulations and sanctions."
     },
