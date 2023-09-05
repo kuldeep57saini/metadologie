@@ -4,70 +4,70 @@ const servicesData = [
         title: "B2B Commerce",
         brief_info: "Online store for B2B transactions. Specializes in creating e-commerce stores.",
         description: "Your online store for B2B transactions. B2B Commerce is another feather in the cap of Salesforce, which specializes in providing businesses to create an online e-commerce store. Usual B2C interactions are not heavy when it comes to transactions. Whereas, when businesses are interacting with each other.",
-        imageSrc: "../images/B2B_Commerce.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/B2B_Commerce.jpg",
     },
     {
         id: '2',
         title: "Einstein Bots",
         brief_info: "Digital assistants for customer interactions. Quick answers for busy agents.",
         description: "Bots, a term derived from robots, is a digital way of transforming human interaction. Usually, your agents are busy resolving critical issues and maybe at that moment, a customer is looking for some straightforward answers.",
-        imageSrc: "../images/Einstein_Bots.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Einstein bots.png",
     },
     {
         id: '3',
         title: "Service Cloud",
         brief_info: "Customer service management. Streamline support for sold products/services.",
         description: "Service Cloud is another vertical of Salesforce which deals in customer service management. Once a product or service is sold, it becomes evident to provide industry-leading customer service. However, at times with the number of incoming calls, emails, or texts, it can be a tedious task to manage everything on time.",
-        imageSrc: "../images/Service_Cloud.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Service Cloud.png",
     },
     {
         id: '4',
         title: "Experience Cloud",
         brief_info: "Common platform for seamless communication. Enhance customer interaction.",
         description: "Salesforce Experience Cloud facilitates your customers, partners, or employees with a common platform required for seamless communication. It incorporates services and features of Service Cloud, plus, provides additional benefits of creating a knowledge base, customer self-service portals, a portal for agent-customer interaction, and much more.",
-        imageSrc: "../images/Experience_Cloud.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Experience Cloud.png",
     },
     {
         id: '5',
         title: "Salesforce CPQ",
         brief_info: "Configure, price, and quote tool. Improve proposal accuracy.",
         description: "CPQ refers to configure, price, and quote. With this, you would have a slight idea that it deals with the proposals shared with your customers. Traditional sales methods involve the manual creation of proposals, which has its drawbacks including but not limited to incorrect pricing, inaccurate discounts, or.",
-        imageSrc: "../images/Salesforce_CPQ.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Salesforce CPQ.png",
     },
     {
         id: '6',
         title: "Sales Cloud",
         brief_info: "Automated sales management. Centralize scattered data.",
         description: "Sales Cloud is an automated sales management tool, which assembles all the scattered data over different devices in one place. Whether you are a salesperson or a sales manager, you have all the information handy on your laptop or even mobile.",
-        imageSrc: "../images/Sales_Cloud.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Sales Cloud.png",
     },
     {
         id: '7',
         title: "Pardot",
         brief_info: "B2B marketing automation tool. Generate leads effectively.",
         description: "Pardot is an automated marketing tool, which is commonly used for the B2B segment of the business industry. Whether you are trying to sell a product or a service to another business, it becomes crucial to generate leads to gain the maximum out of your marketing campaign.",
-        imageSrc: "../images/Pardot.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Salesforce Pardot.png",
     },
     {
         id: '8',
         title: "Marketing Cloud",
         brief_info: "CRM for marketing segments. Targeted marketing for more business.",
         description: "Salesforce Marketing Cloud is a part of the Salesforce CRM suite, which deals with the marketing segment of a company business. With targeted marketing keeping the customer journey in focus and generating interactions with customers can help your marketing team in generating more business.",
-        imageSrc: "../images/Marketing_Cloud.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Marketing Cloud.png",
     },
     {
         id: '9',
         title: "Integrations",
         brief_info: "Data distribution across systems. Streamline existing operations.",
         description: "Data communication is evident with the growing technologies, as not everything can be assembled in one place. You might have existing systems that are being used for daily operations, and we know that changes are not that adaptable. This is where Salesforce integration works.",
-        imageSrc: "../images/Integrations.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Salesforce CPQ.png",
     },
     {
         id: '10',
         title: "Field Service Lightning",
         brief_info: "Powerful tool for field services. Retain customers with on-time service.",
         description: "Field Service Lightning allows you to excel in the area of field services provided to your customers. Facilitating your customers with on-time, accurate and hassle-free service is what helps you in retaining the customers.",
-        imageSrc: "../images/Field_Service_Lightning.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Salesforce CPQ.png",
     }
 ];
 
@@ -124,42 +124,42 @@ generateServiceCards();
 
 const integrationData = [
     {
-        imageSrc: "../images/B2B_Commerce.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Esker.png",
         altText: "Esker",
         content: "Esker is a global cloud platform built to unlock strategic value for Finance, Procurement and Customer Service professionals and strengthen collaboration between companies by automating the cash conversion cycle."
     },
     {
-        imageSrc: "../images/B2B_Commerce.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/YP.png",
         altText: "AR",
         content: "Digitize With AR automation provides a business with more accurate data, allowing a company to improve its customer outreach by automatically generating invoices, emailing payment reminders and providing multiple payment options."
     },
     {
-        imageSrc: "../images/Autavia.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Authvia.png",
         altText: "Autavia",
         content: "Autavia is a comprehensive aviation maintenance and inventory management software designed to help aviation businesses streamline operations and improve efficiency."
     },
     {
-        imageSrc: "../images/Dun_and_Bradstreet.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Dun_and_Bradstreet.png",
         altText: "Dun & Bradstreet",
         content: "Dun & Bradstreet offers data-driven solutions to help businesses make informed decisions, manage risk, and build valuable customer relationships."
     },
     {
-        imageSrc: "../images/DocuSign.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/DocuSign.png",
         altText: "DocuSign",
         content: "DocuSign is a leading electronic signature and contract management platform, empowering organizations to digitize and automate agreements and approvals."
     },
     {
-        imageSrc: "../images/Zenkraft.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Zenkraft.png",
         altText: "Zenkraft",
         content: "Zenkraft provides shipping solutions that integrate with Salesforce, enabling businesses to manage shipping, tracking, and returns seamlessly."
     },
     {
-        imageSrc: "../images/Visual_Compliance.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Visual_Compliance.png",
         altText: "Visual Compliance",
         content: "Visual Compliance offers export compliance solutions, helping businesses ensure compliance with international trade regulations and sanctions."
     },
     {
-        imageSrc: "../images/AvSight.jpg",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/AvSight.png",
         altText: "AvSight",
         content: "AvSight is an aviation MRO software designed to enhance aircraft maintenance and inventory management for aviation companies."
     }
