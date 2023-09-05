@@ -232,6 +232,7 @@ const openModal =(item)=>{
     
     document.getElementById('last_name').value = '-';
     document.getElementById('00N5h00000FHd4f').value = servicesData[index].title;
+    console.log(servicesData[index].title);
     document.getElementById('myModal').style.display = 'block';
 }
 
