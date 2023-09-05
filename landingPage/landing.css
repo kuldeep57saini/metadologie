@@ -22,6 +22,7 @@ section.our-services {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
 }
 
 .our-services-card-title {
