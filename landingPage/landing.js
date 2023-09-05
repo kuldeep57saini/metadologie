@@ -39,7 +39,7 @@ const servicesData = [
         title: "Sales Cloud",
         brief_info: "Automated sales management. Centralize scattered data.",
         description: "Sales Cloud is an automated sales management tool, which assembles all the scattered data over different devices in one place. Whether you are a salesperson or a sales manager, you have all the information handy on your laptop or even mobile.",
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Sales Cloud.png",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Sales cloud.png",
     },
     {
         id: '7',
