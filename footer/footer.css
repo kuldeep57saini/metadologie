@@ -124,6 +124,10 @@
     .small-screen-hide{
         display: none;
     }
+
+    .footer-column-heading{
+        margin: 0 0 8% 0;
+    }
 }
 
 @media (max-width:479px) and (min-width:200px) {
