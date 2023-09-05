@@ -66,7 +66,9 @@ class Header extends HTMLElement {
                     </ul>
                 </nav>
                 <div class="hamburger-menu">
-                    <div class="bar"></div>
+                    <div >
+                        <div class="bar"></div>
+                    </div>
                 </div>
             </div>
         </div>
