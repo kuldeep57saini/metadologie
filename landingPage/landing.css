@@ -168,7 +168,6 @@ section.integration {
 
 .integration-card-image img{
     height: auto !important;
-    width: auto;
 }
 
 .integration-card-image::after {

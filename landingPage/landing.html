@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="./landing.css">
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../common/common.css">
+    <link rel="stylesheet" href="../requestForm/requestForm.css">
 </head>
 
 <body>
@@ -60,24 +62,32 @@
                         information on its origins, as well as a
                         random Lipsum generator.</p>
                 </div>
-                <form action="" class="more-info-form">
+                <form style="width: 100%;"
+                    action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="more-info-form">
+                    <input type=hidden name="oid" value="00D5h000006LZ1n">
+                    <input type=hidden name="retURL" value="https://google.com">
                     <div class="form-group half-width">
                         <label for="first_name">First Name</label>
-                        <input id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+                        <input id="first_name" maxlength="40"
+                        name="first_name" size="20" type="text"/>
                     </div>
                     <div class="form-group half-width">
                         <label for="last_name">Last Name</label>
-                        <input id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+                        <input id="last_name" maxlength="80" name="last_name" size="20" type="text"
+                        value="" />
                     </div>
                     <div class="form-group half-width">
                         <label for="email">Email <span style="color:rgb(235, 42, 42);">*</span> </label>
-                        <input id="email" name="email" size="20" type="email" required />
+                        <input placeholder="Email"placeholder="Email" id="email" maxlength="80"
+                        name="email" size="20" type="text" required />
+                    <label class="error-label"/>
                     </div>
 
                     <div class="half-width select-box">
                         <div class="form-group half-width">
                             <label for="services">Services:</label>
-                            <select id="services" name="services">
+                            <select id="00N5h00000FHd4f"
+                            name="00N5h00000FHd4f" title="Type" name="services">
                                 <option value="">--None--</option>
                                 <option value="Pardot">Pardot</option>
                                 <option value="B2B Commerce">B2B Commerce</option>
@@ -93,7 +103,7 @@
                         </div>
                         <div class="form-group half-width">
                             <label for="integrations">Integrations:</label>
-                            <select id="integrations" name="integrations">
+                            <select  id="integrations" name="integrations">
                                 <option value="">--None--</option>
                                 <option value="Esker">Esker</option>
                                 <option value="Digitize">Digitize</option>
@@ -108,12 +118,96 @@
                     </div>
                     <div class="form-group full-width">
                         <label for="message">Message:</label>
-                        <textarea id="message" wrap="soft"></textarea>
+                        <textarea id="message" placeholder="Subject" id="title" name="title" maxlength="40" size="20"
+                            type="text"></textarea>
                     </div>
                     <div class="submit-button-box form-group full-width">
-                        <button class="submit-button">Submit</button>
+                        <button class="submit-button" type="submit" name="submit">Submit</button>
                     </div>
                 </form>
+            </section>
+
+            <section>
+                <div id="myModal" class="modal">
+                    <div class="request-form">
+                        <div class="modal-content">
+                            <form style="width: 100%;"
+                                action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+                                method="POST">
+                                <input type=hidden name="oid" value="00D5h000006LZ1n">
+                                <input type=hidden name="retURL" value="https://google.com">
+                                <input type=hidden id="last_name" maxlength="80" name="last_name" size="20" type="text"
+                                    value=".">
+                                <div class="form-container">
+                                    <header class="form-header">
+                                        <button onclick="closeModal()" class="close-button" title="Close">
+                                            <span class="close-icon">
+                                            </span>
+                                            <span class="close-text"></span>
+                                        </button>
+                                        <h2 class="form-title">Request Demo</h2>
+                                    </header>
+                                    <div class="form-content">
+                                        <div class="form-row flex justify-between">
+                                            <div class="form-element half-width">
+                                                <input class="input-field" id="first_name" maxlength="40"
+                                                    name="first_name" size="20" type="text" />
+                                                <label class="error-label"></label>
+                                            </div>
+                                            <div class="form-element half-width">
+                                                <input class="input-field" placeholder="Company" id="company"
+                                                    maxlength="40" name="company" size="20" type="text" />
+                                                <label class="error-label"></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row flex justify-between">
+                                            <div class="form-element half-width">
+                                                <input class="input-field" placeholder="Email" id="email" maxlength="80"
+                                                    name="email" size="20" type="text" required />
+                                                <label class="error-label"></label>
+                                            </div>
+                                            <div class="form-element half-width">
+                                                <input class="input-field" type="text" placeholder="Mobile Number"
+                                                    name="mobile" id="mobile" data-name="mobile" />
+                                                <label class="error-label"></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-element flex">
+                                            <input class="input-field" placeholder="Mobile" id="mobile" maxlength="40"
+                                                name="mobile" size="20" type="text" />
+                                            <label class="error-label"></label>
+                                        </div>
+                                        <div class="form-element brief-div">
+                                            <textarea class="textarea-field" placeholder="Subject" id="title"
+                                                name="title" maxlength="40" size="20" type="text"></textarea>
+                                            <label class="error-label"></label>
+                                        </div>
+
+                                        <select style="position: absolute; left: -9999px;" id="00N5h00000FHd4f"
+                                            name="00N5h00000FHd4f" title="Type">
+                                            <option value="B2B Commerce">B2B Commerce</option>
+                                            <option value="Einstein Bots">Einstein Bots</option>
+                                            <option value="Service Cloud">Service Cloud</option>
+                                            <option value="Experience Cloud">Experience Cloud</option>
+                                            <option value="Salesforce CPQ">Salesforce CPQ</option>
+                                            <option value="Sales Cloud">Sales Cloud</option>
+                                            <option value="Pardot">Pardot</option>
+                                            <option value="Marketing Cloud">Marketing Cloud</option>
+                                            <option value="Integrations">Integrations</option>
+                                            <option value="Field Service Lightning">Field Service Lightning</option>
+                                        </select>
+
+                                    </div>
+                                    <footer class="form-footer">
+                                        <button class="cancel-button" title="Cancel" style="color: rgb(34, 59, 139);"
+                                            onclick="closeModal()">Cancel</button>
+                                        <input class="submit-button" type="submit" name="submit" onclick="submitForm()">
+                                    </footer>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </div>
