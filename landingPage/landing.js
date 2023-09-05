@@ -21,13 +21,13 @@ const servicesData = [
         title: "Experience Cloud",
         brief_info: "Common platform for seamless communication. Enhance customer interaction.",
         description: "Salesforce Experience Cloud facilitates your customers, partners, or employees with a common platform required for seamless communication. It incorporates services and features of Service Cloud, plus, provides additional benefits of creating a knowledge base, customer self-service portals, a portal for agent-customer interaction, and much more.",
-        imageSrc: "./images/Experience_Cloud.jpg"
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Experience Cloud.jpg"
     },
     {
         title: "Salesforce CPQ",
         brief_info: "Configure, price, and quote tool. Improve proposal accuracy.",
         description: "CPQ refers to configure, price, and quote. With this, you would have a slight idea that it deals with the proposals shared with your customers. Traditional sales methods involve the manual creation of proposals, which has its drawbacks including but not limited to incorrect pricing, inaccurate discounts, or.",
-        imageSrc: ".https://kuldeep57saini.github.io/metadologie/images/Salesforce CPQ.png"
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Salesforce CPQ.png"
     },
     {
         title: "Sales Cloud",
@@ -51,13 +51,13 @@ const servicesData = [
         title: "Integrations",
         brief_info: "Data distribution across systems. Streamline existing operations.",
         description: "Data communication is evident with the growing technologies, as not everything can be assembled in one place. You might have existing systems that are being used for daily operations, and we know that changes are not that adaptable. This is where Salesforce integration works.",
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Integrations.png"
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/B2B_Commerce.jpg"
     },
     {
         title: "Field Service Lightning",
         brief_info: "Powerful tool for field services. Retain customers with on-time service.",
         description: "Field Service Lightning allows you to excel in the area of field services provided to your customers. Facilitating your customers with on-time, accurate and hassle-free service is what helps you in retaining the customers.",
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Field Service Lightning.png"
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/B2B_Commerce.jpg"
     }
 ];
 
@@ -119,7 +119,7 @@ const integrationData = [
         content: "Esker is a global cloud platform built to unlock strategic value for Finance, Procurement and Customer Service professionals and strengthen collaboration between companies by automating the cash conversion cycle."
     },
     {
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Esker.png",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/YP.png",
         altText: "AR",
         content: "Digitize With AR automation provides a business with more accurate data, allowing a company to improve its customer outreach by automatically generating invoices, emailing payment reminders and providing multiple payment options."
     },
