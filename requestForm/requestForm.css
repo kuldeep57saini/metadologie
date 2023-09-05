@@ -360,7 +360,7 @@
 
 @media(max-width:420px){
     .modal-content{
-        width: 80%;
+        width: 80% !important;
     }
     .form-footer{
         display:flex;
