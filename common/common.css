@@ -70,13 +70,13 @@ html {
     }
 }
 
-@media screen and (min-width: 321px) and (max-width: 750px) {
+@media screen and (min-width: 425px) and (max-width: 750px) {
     .size-medium_1-of-2 {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 446px) {
     .size-small_1-of-1 {
         width: 100%;
     }
