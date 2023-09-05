@@ -32,47 +32,51 @@ class Footer extends HTMLElement{
 
             <div class="footer-column">
                 <div class="p-5">
-                    <h2 class="footer-column-heading">Explore</h2>
-                    <ul class="footer-font-size">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Dive In</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Industries</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                    <h2 class="footer-column-heading">Connect With Us</h2>
-                    <a class="footer-font-size">Engage with Metadologie Support</a>
+                    <div>
+                        <h2 class="footer-column-heading">Explore</h2>
+                        <ul class="footer-font-size">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Dive In</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Industries</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="footer-column-heading">Connect With Us</h2>
+                        <a class="footer-font-size">Engage with Metadologie Support</a>
+                    </div>
                 </div>
             </div>
 
             <div class="footer-column">
                 <div class="p-5">
+                    <div>
+                        <h2 class="footer-column-heading">Discover</h2>
+                        <ul class="footer-font-size">
+                            <li><a href="#">Expertise</a></li>
+                            <li><a href="#">Insights</a></li>
+                            <li><a href="#">Industries</a></li>  
+                        </ul>
+                    </div>
+                    <div>
 
-                    <h2 class="footer-column-heading">Discover</h2>
-                    <ul class="footer-font-size">
-                        <li><a href="#">Expertise</a></li>
-                        <li><a href="#">Insights</a></li>
-                        <li><a href="#">Industries</a></li>
-
-                    </ul>
-                    <h2 class="footer-column-heading">About metadologie</h2>
-                    <ul class="footer-font-size">
-                        <li><a href="#">About Metadologie</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Life @ Metadologie</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-
-                    </ul>
+                        <h2 class="footer-column-heading">About metadologie</h2>
+                        <ul class="footer-font-size">
+                            <li><a href="#">About Metadologie</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Life @ Metadologie</a></li>
+                            <li><a href="#">Privacy Policy</a></li>    
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer-column">
                 <div class="p-5">
 
                     <h2 class="footer-column-heading">Conatct</h2>
-
-
                     <table class="address-table footer-font-size">
                         <tr>
                             <td><i class="fa fa-map-marker"></i></td>
@@ -99,7 +103,6 @@ class Footer extends HTMLElement{
                             <td><a href="#">Support@metadologie.com</a></td>
                         </tr>
                     </table>
-
                 </div>
             </div>
             <div class="footer-column">
