@@ -143,7 +143,11 @@ section.integration {
 .integration-card-body {
     max-width: 270px;
     min-width: 130px;
-    min-height: 250px;
+}
+
+.integration-card-body,
+.integration-card-content {
+    min-height: 98px;
 }
 
 .integration-card-body {
