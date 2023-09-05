@@ -21,7 +21,7 @@ const servicesData = [
         title: "Experience Cloud",
         brief_info: "Common platform for seamless communication. Enhance customer interaction.",
         description: "Salesforce Experience Cloud facilitates your customers, partners, or employees with a common platform required for seamless communication. It incorporates services and features of Service Cloud, plus, provides additional benefits of creating a knowledge base, customer self-service portals, a portal for agent-customer interaction, and much more.",
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Experience Cloud.jpg"
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Experience Cloud.png"
     },
     {
         title: "Salesforce CPQ",
