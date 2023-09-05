@@ -36,7 +36,6 @@
 }
 
 .footer-column-sub-heading{
-    margin-bottom: 5%;
     font-size: var(--footer-sub-heading-font-size);
     text-transform: uppercase;
 }
@@ -126,6 +125,14 @@
         display: none;
     }
 }
+
+@media (max-width:479px) and (min-width:200px) {
+    .small-size-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 
 .email-section {
     display: flex;

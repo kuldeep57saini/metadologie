@@ -31,7 +31,7 @@ class Footer extends HTMLElement{
 
 
             <div class="footer-column">
-                <div class="p-5">
+                <div class="p-5 small-size-flex">
                     <div>
                         <h2 class="footer-column-heading">Explore</h2>
                         <ul class="footer-font-size">
@@ -52,7 +52,7 @@ class Footer extends HTMLElement{
             </div>
 
             <div class="footer-column">
-                <div class="p-5">
+                <div class="p-5 small-size-flex">
                     <div>
                         <h2 class="footer-column-heading">Discover</h2>
                         <ul class="footer-font-size">
