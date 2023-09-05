@@ -3,61 +3,61 @@ const servicesData = [
         title: "B2B Commerce",
         brief_info: "Online store for B2B transactions. Specializes in creating e-commerce stores.",
         description: "Your online store for B2B transactions. B2B Commerce is another feather in the cap of Salesforce, which specializes in providing businesses to create an online e-commerce store. Usual B2C interactions are not heavy when it comes to transactions. Whereas, when businesses are interacting with each other.",
-        imageSrc: "../images/B2B_Commerce.jpg"
+        imageSrc: "./images/B2B_Commerce.jpg"
     },
     {
         title: "Einstein Bots",
         brief_info: "Digital assistants for customer interactions. Quick answers for busy agents.",
         description: "Bots, a term derived from robots, is a digital way of transforming human interaction. Usually, your agents are busy resolving critical issues and maybe at that moment, a customer is looking for some straightforward answers.",
-        imageSrc: "../images/Einstein_Bots.jpg"
+        imageSrc: "./images/Einstein_Bots.jpg"
     },
     {
         title: "Service Cloud",
         brief_info: "Customer service management. Streamline support for sold products/services.",
         description: "Service Cloud is another vertical of Salesforce which deals in customer service management. Once a product or service is sold, it becomes evident to provide industry-leading customer service. However, at times with the number of incoming calls, emails, or texts, it can be a tedious task to manage everything on time.",
-        imageSrc: "../images/Service_Cloud.jpg"
+        imageSrc: "./images/Service_Cloud.jpg"
     },
     {
         title: "Experience Cloud",
         brief_info: "Common platform for seamless communication. Enhance customer interaction.",
         description: "Salesforce Experience Cloud facilitates your customers, partners, or employees with a common platform required for seamless communication. It incorporates services and features of Service Cloud, plus, provides additional benefits of creating a knowledge base, customer self-service portals, a portal for agent-customer interaction, and much more.",
-        imageSrc: "../images/Experience_Cloud.jpg"
+        imageSrc: "./images/Experience_Cloud.jpg"
     },
     {
         title: "Salesforce CPQ",
         brief_info: "Configure, price, and quote tool. Improve proposal accuracy.",
         description: "CPQ refers to configure, price, and quote. With this, you would have a slight idea that it deals with the proposals shared with your customers. Traditional sales methods involve the manual creation of proposals, which has its drawbacks including but not limited to incorrect pricing, inaccurate discounts, or.",
-        imageSrc: "../images/Salesforce_CPQ.jpg"
+        imageSrc: "./images/Salesforce_CPQ.jpg"
     },
     {
         title: "Sales Cloud",
         brief_info: "Automated sales management. Centralize scattered data.",
         description: "Sales Cloud is an automated sales management tool, which assembles all the scattered data over different devices in one place. Whether you are a salesperson or a sales manager, you have all the information handy on your laptop or even mobile.",
-        imageSrc: "../images/Sales_Cloud.jpg"
+        imageSrc: "./images/Sales_Cloud.jpg"
     },
     {
         title: "Pardot",
         brief_info: "B2B marketing automation tool. Generate leads effectively.",
         description: "Pardot is an automated marketing tool, which is commonly used for the B2B segment of the business industry. Whether you are trying to sell a product or a service to another business, it becomes crucial to generate leads to gain the maximum out of your marketing campaign.",
-        imageSrc: "../images/Pardot.jpg"
+        imageSrc: "./images/Pardot.jpg"
     },
     {
         title: "Marketing Cloud",
         brief_info: "CRM for marketing segments. Targeted marketing for more business.",
         description: "Salesforce Marketing Cloud is a part of the Salesforce CRM suite, which deals with the marketing segment of a company business. With targeted marketing keeping the customer journey in focus and generating interactions with customers can help your marketing team in generating more business.",
-        imageSrc: "../images/Marketing_Cloud.jpg"
+        imageSrc: "./images/Marketing_Cloud.jpg"
     },
     {
         title: "Integrations",
         brief_info: "Data distribution across systems. Streamline existing operations.",
         description: "Data communication is evident with the growing technologies, as not everything can be assembled in one place. You might have existing systems that are being used for daily operations, and we know that changes are not that adaptable. This is where Salesforce integration works.",
-        imageSrc: "../images/Integrations.jpg"
+        imageSrc: "./images/Integrations.jpg"
     },
     {
         title: "Field Service Lightning",
         brief_info: "Powerful tool for field services. Retain customers with on-time service.",
         description: "Field Service Lightning allows you to excel in the area of field services provided to your customers. Facilitating your customers with on-time, accurate and hassle-free service is what helps you in retaining the customers.",
-        imageSrc: "../images/Field_Service_Lightning.jpg"
+        imageSrc: "./images/Field_Service_Lightning.jpg"
     }
 ];
 
@@ -114,42 +114,42 @@ generateServiceCards();
 
 const integrationData = [
     {
-        imageSrc: "../images/B2B_Commerce.jpg",
+        imageSrc: "./images/B2B_Commerce.jpg",
         altText: "Esker",
         content: "Esker is a global cloud platform built to unlock strategic value for Finance, Procurement and Customer Service professionals and strengthen collaboration between companies by automating the cash conversion cycle."
     },
     {
-        imageSrc: "../images/B2B_Commerce.jpg",
+        imageSrc: "./images/B2B_Commerce.jpg",
         altText: "AR",
         content: "Digitize With AR automation provides a business with more accurate data, allowing a company to improve its customer outreach by automatically generating invoices, emailing payment reminders and providing multiple payment options."
     },
     {
-        imageSrc: "../images/Autavia.jpg",
+        imageSrc: "./images/Autavia.jpg",
         altText: "Autavia",
         content: "Autavia is a comprehensive aviation maintenance and inventory management software designed to help aviation businesses streamline operations and improve efficiency."
     },
     {
-        imageSrc: "../images/Dun_and_Bradstreet.jpg",
+        imageSrc: "./images/Dun_and_Bradstreet.jpg",
         altText: "Dun & Bradstreet",
         content: "Dun & Bradstreet offers data-driven solutions to help businesses make informed decisions, manage risk, and build valuable customer relationships."
     },
     {
-        imageSrc: "../images/DocuSign.jpg",
+        imageSrc: "./images/DocuSign.jpg",
         altText: "DocuSign",
         content: "DocuSign is a leading electronic signature and contract management platform, empowering organizations to digitize and automate agreements and approvals."
     },
     {
-        imageSrc: "../images/Zenkraft.jpg",
+        imageSrc: "./images/Zenkraft.jpg",
         altText: "Zenkraft",
         content: "Zenkraft provides shipping solutions that integrate with Salesforce, enabling businesses to manage shipping, tracking, and returns seamlessly."
     },
     {
-        imageSrc: "../images/Visual_Compliance.jpg",
+        imageSrc: "./images/Visual_Compliance.jpg",
         altText: "Visual Compliance",
         content: "Visual Compliance offers export compliance solutions, helping businesses ensure compliance with international trade regulations and sanctions."
     },
     {
-        imageSrc: "../images/AvSight.jpg",
+        imageSrc: "./images/AvSight.jpg",
         altText: "AvSight",
         content: "AvSight is an aviation MRO software designed to enhance aircraft maintenance and inventory management for aviation companies."
     }
