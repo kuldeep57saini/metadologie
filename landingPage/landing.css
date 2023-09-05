@@ -49,6 +49,7 @@ section.our-services {
 .our-services-card-body {
     max-width: 240px;
     min-width: 130px;
+    min-height: 250px;
 }
 
 .our-services-card-body {
