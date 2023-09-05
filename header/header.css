@@ -130,7 +130,7 @@ main {
         margin-right: 5%;
         z-index: 5;
     }
-
+.bar,
     .bar::before,
 .bar::after {
     content: "";
