@@ -89,7 +89,7 @@
 }
 
 .fa {
-    font-size: var(--footer-icon-size);
+    font-size: var(--icon-size);
     text-align: center;
     text-decoration: none;
     color: white;
