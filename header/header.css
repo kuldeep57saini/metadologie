@@ -121,7 +121,6 @@ main {
 
     .hamburger-menu {
         width: 30px;
-        height: 20px;
         position: relative;
         cursor: pointer;
         display: block;
