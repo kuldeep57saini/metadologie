@@ -120,8 +120,6 @@ main {
     }
 
     .hamburger-menu {
-        background: var(--header-icon-color);
-        /* Icon color in the header */
         width: 30px;
         height: 20px;
         position: relative;
