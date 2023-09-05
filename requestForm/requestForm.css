@@ -1,0 +1,358 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.modal-content {
+    position: absolute;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-header {
+    -webkit-text-size-adjust: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    -webkit-tap-highlight-color: transparent;
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    font-size: .8125rem;
+    visibility: visible;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    border-top-right-radius: var(--slds-c-modal-radius-border, var(--sds-c-modal-radius-border, .25rem));
+    border-top-left-radius: var(--slds-c-modal-radius-border, var(--sds-c-modal-radius-border, .25rem));
+    border-bottom-width: var(--slds-c-modal-sizing-border, var(--sds-c-modal-sizing-border, 2px));
+    border-bottom-style: solid;
+    border-bottom-color: var(--slds-c-modal-color-border, var(--sds-c-modal-color-border, #e5e5e5));
+    background-color: var(--slds-c-modal-header-color-background, var(--sds-c-modal-header-color-background, var(--slds-c-modal-color-background, var(--sds-c-modal-color-background, #fff))));
+    color: var(--slds-c-modal-header-text-color, var(--sds-c-modal-header-text-color, var(--sds-c-modal-text-color)));
+    flex-shrink: 0;
+    padding-top: var(--slds-c-modal-header-spacing-block-start, var(--sds-c-modal-header-spacing-block-start, 1rem));
+    padding-right: var(--slds-c-modal-header-spacing-inline-end, var(--sds-c-modal-header-spacing-inline-end, 1rem));
+    padding-bottom: var(--slds-c-modal-header-spacing-block-end, var(--sds-c-modal-header-spacing-block-end, 1rem));
+    padding-left: var(--slds-c-modal-header-spacing-inline-start, var(--sds-c-modal-header-spacing-inline-start, 1rem));
+    text-align: center;
+}
+
+.form-title {
+    -webkit-text-size-adjust: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    -webkit-tap-highlight-color: transparent;
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    visibility: visible;
+    -webkit-box-direction: normal;
+    color: var(--slds-c-modal-header-text-color, var(--sds-c-modal-header-text-color, var(--sds-c-modal-text-color)));
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word;
+    hyphens: auto;
+    font-size: 1.25rem;
+    line-height: 1.25;
+}
+
+.form-content {
+    -webkit-text-size-adjust: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    -webkit-tap-highlight-color: transparent;
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    font-size: .8125rem;
+    visibility: visible;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    background-color: var(--slds-c-modal-content-color-background, var(--sds-c-modal-content-color-background, var(--slds-c-modal-color-background, var(--sds-c-modal-color-background, #fff))));
+    color: var(--slds-c-modal-content-text-color, var(--sds-c-modal-content-text-color, var(--slds-c-modal-text-color, var(--sds-c-modal-text-color))));
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 1.5rem;
+}
+
+.input-field,
+.textarea-field
+{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    visibility: visible;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    font: inherit;
+    margin: 0;
+    padding-top: 0;
+    padding-right: var(--slds-c-input-spacing-horizontal-end,var(--sds-c-input-spacing-horizontal-end,1rem));
+    padding-bottom: 0;
+    padding-left: var(--slds-c-input-spacing-horizontal-start,var(--sds-c-input-spacing-horizontal-start,.75rem));
+    width: 100%;
+    min-height: calc(1.875rem + (1px * 2));
+    line-height: 1.875rem;
+    border: 1px solid var(--slds-c-input-color-border,var(--sds-c-input-color-border,#c9c9c9));
+    border-radius: var(--slds-c-input-radius-border,var(--sds-c-input-radius-border,.25rem));
+    background-color: var(--slds-c-input-color-background,var(--sds-c-input-color-background,#fff));
+    color: var(--slds-c-input-text-color,var(--sds-c-input-text-color));
+    transition: border .1s linear,background-color .1s linear;
+    display: inline-block;
+    box-shadow: none !important;
+}
+
+.form-footer{
+    -webkit-text-size-adjust: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    line-height: 1.5;
+    -webkit-tap-highlight-color: transparent;
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    font-size: .8125rem;
+    visibility: visible;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    display: block;
+    border-bottom-right-radius: var(--slds-c-modal-radius-border,var(--sds-c-modal-radius-border,.25rem));
+    border-bottom-left-radius: var(--slds-c-modal-radius-border,var(--sds-c-modal-radius-border,.25rem));
+    border-top-width: var(--slds-c-modal-sizing-border,var(--sds-c-modal-sizing-border,2px));
+    border-top-style: solid;
+    border-top-color: var(--slds-c-modal-color-border,var(--sds-c-modal-color-border,#e5e5e5));
+    background-color: var(--slds-c-modal-footer-color-background,var(--sds-c-modal-footer-color-background,var(--slds-c-modal-color-background,var(--sds-c-modal-color-background,#f3f3f3))));
+    color: var(--slds-c-modal-footer-text-color,var(--sds-c-modal-footer-text-color,var(--slds-c-modal-text-color,var(--sds-c-modal-text-color))));
+    flex-shrink: 0;
+    padding-top: var(--slds-c-modal-footer-spacing-block-start,var(--sds-c-modal-footer-spacing-block-start,.75rem));
+    padding-right: var(--slds-c-modal-footer-spacing-inline-end,var(--sds-c-modal-footer-spacing-inline-end,1rem));
+    padding-bottom: var(--slds-c-modal-footer-spacing-block-end,var(--sds-c-modal-footer-spacing-block-end,.75rem));
+    padding-left: var(--slds-c-modal-footer-spacing-inline-start,var(--sds-c-modal-footer-spacing-inline-start,1rem));
+    text-align: right;
+    box-shadow: var(--slds-c-modal-shadow,var(--sds-c-modal-shadow,0 2px 3px 0 rgba(0,0,0,.16)));
+}
+
+/* Style for overlay background */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    z-index: 999;
+    /* Place the overlay above everything else */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the form container */
+.request-form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Style for the close button */
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.cancel-button{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    visibility: visible;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    font: inherit;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: var(--slds-c-button-spacing-block-start,var(--sds-c-button-spacing-block-start,0));
+    padding-right: var(--slds-c-button-spacing-inline-end,var(--sds-c-button-spacing-inline-end,0));
+    padding-bottom: var(--slds-c-button-spacing-block-end,var(--sds-c-button-spacing-block-end,0));
+    padding-left: var(--slds-c-button-spacing-inline-start,var(--sds-c-button-spacing-inline-start,0));
+    background: 0 0;
+    background-color: var(--slds-c-button-color-background,var(--sds-c-button-color-background,transparent));
+    background-clip: border-box;
+    border-color: var(--slds-c-button-color-border,var(--sds-c-button-color-border,transparent));
+    border-style: solid;
+    border-width: var(--slds-c-button-sizing-border,var(--sds-c-button-sizing-border,1px));
+    border-radius: var(--slds-c-button-radius-border,var(--sds-c-button-radius-border,.25rem));
+    box-shadow: var(--slds-c-button-shadow,var(--sds-c-button-shadow));
+    line-height: var(--slds-c-button-line-height,var(--sds-c-button-line-height,1.875rem));
+    text-decoration: none;
+    -webkit-appearance: none;
+    white-space: normal;
+    user-select: none;
+    --slds-c-button-spacing-inline-start: var(
+    --slds-c-button-neutral-spacing-inline-start,
+    var(--sds-c-button-neutral-spacing-inline-start, 1rem)
+  );
+    --slds-c-button-spacing-inline-end: var(
+    --slds-c-button-neutral-spacing-inline-end,
+    var(--sds-c-button-neutral-spacing-inline-end, 1rem)
+  );
+    text-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    transition: border .15s linear;
+    --slds-c-button-color-background: var(
+    --slds-c-button-neutral-color-background,
+    var(--sds-c-button-neutral-color-background, white)
+  );
+    --slds-c-button-color-border: var(
+    --slds-c-button-neutral-color-border,
+    var(--sds-c-button-neutral-color-border, #c9c9c9)
+  );
+    color: rgb(34, 59, 139);
+}
+.submit-button {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    visibility: visible;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    font: inherit;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: var(--slds-c-button-spacing-block-start,var(--sds-c-button-spacing-block-start,0));
+    padding-right: var(--slds-c-button-spacing-inline-end,var(--sds-c-button-spacing-inline-end,0));
+    padding-bottom: var(--slds-c-button-spacing-block-end,var(--sds-c-button-spacing-block-end,0));
+    padding-left: var(--slds-c-button-spacing-inline-start,var(--sds-c-button-spacing-inline-start,0));
+    background: 0 0;
+    background-clip: border-box;
+    border-radius: var(--slds-c-button-radius-border,var(--sds-c-button-radius-border,.25rem));
+    box-shadow: var(--slds-c-button-shadow,var(--sds-c-button-shadow));
+    line-height: var(--slds-c-button-line-height,var(--sds-c-button-line-height,1.875rem));
+    text-decoration: none;
+    color: var(--slds-c-button-text-color,var(--sds-c-button-text-color,#0176d3));
+    -webkit-appearance: none;
+    white-space: normal;
+    user-select: none;
+    --slds-c-button-spacing-inline-start: var(
+    --slds-c-button-brand-spacing-inline-start,
+    var(--sds-c-button-brand-spacing-inline-start, 1rem)
+  );
+    --slds-c-button-spacing-inline-end: var(
+    --slds-c-button-brand-spacing-inline-end,
+    var(--sds-c-button-brand-spacing-inline-end, 1rem)
+  );
+    text-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    transition: border .15s linear;
+    --slds-c-button-color-background: var(
+    --slds-c-button-brand-color-background,
+    var(--sds-c-button-brand-color-background, #0176d3)
+  );
+    --slds-c-button-color-border: var(
+    --slds-c-button-brand-color-border,
+    var(--sds-c-button-brand-color-border, #0176d3)
+  );
+    --slds-c-button-text-color: var(--slds-c-button-brand-text-color, var(--sds-c-button-brand-text-color, white));
+    background-color: #223b8b;
+    border: hidden;
+    margin-left: .5rem;
+}
+
+.close-icon {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .close-icon::before,
+  .close-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(99, 99, 99);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 20px;
+  }
+  
+  .close-icon::before {
+    transform: rotate(45deg);
+  }
+  
+  .close-icon::after {
+    transform: rotate(-45deg);
+  }
+  
+  input{
+    outline: none;
+  }
+
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-element{
+    padding: 3% 0;
+  }
+
+  .half-width{
+    width: calc(50% - 10px);
+  }
+
+  .justify-between{
+    justify-content: space-between;
+  }
+
+  @media (max-width:720px) {
+    .half-width{
+        width: 100%;
+      }
+  }
