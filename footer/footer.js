@@ -46,7 +46,11 @@ class Footer extends HTMLElement{
                     </div>
                     <div>
                         <h2 class="footer-column-heading">Connect With Us</h2>
-                        <a class="footer-font-size">Engage with Metadologie Support</a>
+                        <ul class="footer-font-size">
+                            <li>
+                                <a >Engage with Metadologie Support</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -92,7 +96,7 @@ class Footer extends HTMLElement{
                         </tr>
                         <tr>
                             <td><i class="fa fa-phone"></i></td>
-                            <td><a href="#">1234567890</a></td>
+                            <td><a href="tel:9999999999">999 999 9999</a></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -100,7 +104,7 @@ class Footer extends HTMLElement{
                         </tr>
                         <tr>
                             <td><i class="fa fa-envelope"></i></td>
-                            <td><a href="#">Support@metadologie.com</a></td>
+                            <td><a href="mailto:Support@metadologie.com">Support@metadologie.com</a></td>
                         </tr>
                     </table>
                 </div>
@@ -123,7 +127,7 @@ class Footer extends HTMLElement{
                         </tr>
                         <tr>
                             <td><i class="fa fa-phone"></i></td>
-                            <td><a href="#">1234567890</a></td>
+                            <td><a href="tel:9999999999">999 999 9999</a></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -131,7 +135,7 @@ class Footer extends HTMLElement{
                         </tr>
                         <tr>
                             <td><i class="fa fa-envelope"></i></td>
-                            <td><a href="#">Support@metadologie.com</a></td>
+                            <td><a href="mailto:Support@metadologie.com">Support@metadologie.com</a></td>
                         </tr>
                     </table>
 
