@@ -3,13 +3,13 @@ const servicesData = [
         title: "B2B Commerce",
         brief_info: "Online store for B2B transactions. Specializes in creating e-commerce stores.",
         description: "Your online store for B2B transactions. B2B Commerce is another feather in the cap of Salesforce, which specializes in providing businesses to create an online e-commerce store. Usual B2C interactions are not heavy when it comes to transactions. Whereas, when businesses are interacting with each other.",
-        imageSrc: "../images/B2B_Commerce.jpg"
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/B2B_Commerce.jpg"
     },
     {
         title: "Einstein Bots",
         brief_info: "Digital assistants for customer interactions. Quick answers for busy agents.",
         description: "Bots, a term derived from robots, is a digital way of transforming human interaction. Usually, your agents are busy resolving critical issues and maybe at that moment, a customer is looking for some straightforward answers.",
-        imageSrc: "../images/Einstein_Bots.jpg"
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/B2B_Commerce.jpg"
     },
     {
         title: "Service Cloud",
