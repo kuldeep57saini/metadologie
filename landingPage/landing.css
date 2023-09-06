@@ -258,6 +258,7 @@ img {
     outline: none;
     width: 100%;
     background-color: var(--white-color);
+    cursor: pointer;
 }
 
 .submit-button-box{
