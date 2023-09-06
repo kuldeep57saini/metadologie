@@ -249,10 +249,11 @@ img {
 }
 
 .more-info-form-section select{
-    padding: 14px 20px;
     width: calc(100% - 20px);
+    padding: 14px 20px;
     -webkit-appearance: none;
     -moz-appearance: none;
+    background-color: var(--white-color);
 }
 
 .submit-button-box{
