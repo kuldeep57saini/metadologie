@@ -94,6 +94,7 @@ main {
         height: 100vh;
         z-index: 2;
         display: none;
+        overflow: auto;
     }
 
     .nav ul {
