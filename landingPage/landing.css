@@ -117,6 +117,7 @@ button.quick-enquiry-button,
     border-radius: 2px;
     margin: 0 0 12%;
     padding: 3% 4%;
+    white-space: nowrap;
 }
 
 .get-in-touch-button {
@@ -249,7 +250,7 @@ img {
 
 .more-info-form-section select{
     padding: 14px 20px;
-    width: calc(100% - 60px);
+    width: calc(100% - 20px);
     -webkit-appearance: none;
     -moz-appearance: none;
 }
