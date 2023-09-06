@@ -28,6 +28,7 @@ main {
 
 .company-logo img {
     height: 100%;
+    width: auto;
 }
 
 .navigation {
@@ -53,6 +54,7 @@ main {
 
 .nav-links {
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .navigation ul li:hover .nav-links {

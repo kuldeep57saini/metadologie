@@ -237,7 +237,7 @@ img {
 }
 
 .more-info-form-section input,
-.more-info-form-section .select,
+.more-info-form-section select,
 .more-info-form-section textarea {
     width: calc(100% - 60px);
     padding: 15px 20px;
@@ -247,18 +247,11 @@ img {
     outline: none;
 }
 
-.more-info-form-section .select{
+.more-info-form-section select{
     padding: 14px 20px;
     width: calc(100% - 60px);
-}
-
-.more-info-form-section select{
-    font-size: var(--small-font-size);
-    border: none;
-    outline: none;
-    width: 100%;
-    background-color: var(--white-color);
-    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .submit-button-box{
