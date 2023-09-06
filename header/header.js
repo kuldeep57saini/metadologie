@@ -27,7 +27,7 @@ class Header extends HTMLElement {
         this.innerHTML = `
         <div class="header">
             <div class="company-logo">
-                <a href="/">
+                <a href="https://kuldeep57saini.github.io/metadologie">
                     <img src="https://www.metadologie.com/media/Home%20page/Metadologie%20Icon.png" alt="logo">
                 </a>
             </div>
