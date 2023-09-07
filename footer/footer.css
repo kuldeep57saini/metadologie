@@ -1,0 +1,145 @@
+:root {
+    --footer-padding: 20px 10%;
+    --footer-column-width: 20%;
+    --footer-content-font-size: var(--small-font-size);
+    --footer-logo-max-width: 100px;
+}
+
+.footer {
+    color: var(--footer-link-color);
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: var(--footer-background-color);
+    padding: var(--footer-padding);
+    align-items: flex-start;
+}
+
+.footer-column {
+    width: var(--footer-column-width);
+}
+
+.footer-logo {
+    max-width: var(--footer-logo-max-width);
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.footer-font-size{
+    font-size: var(--footer-content-font-size);
+    color: var(--footer-link-color);
+}
+
+.footer-column-heading{
+    margin: 15% 0 8%;
+    font-size: var(--footer-heading-font-size);
+    text-transform: uppercase;
+}
+
+.footer-column-sub-heading{
+    font-size: var(--footer-sub-heading-font-size);
+    text-transform: uppercase;
+}
+
+.footer-content{
+    line-height: .8rem;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--footer-link-color);
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--footer-link-hover-color);
+}
+
+.social-icons {
+    margin: 20px 4px 0 0;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.empty {
+    flex: 0 0 8%;  
+    max-width: 8%; 
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.fa-map-marker {
+    margin-right: 5px; /* Adjust spacing between the icon and text */
+}
+
+.fa {
+    font-size: var(--icon-size);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.address-table tr td{
+    padding-top: 5%;
+    border: solid transparent;
+    border-width: 0 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+@media (min-width: 1024px) {
+    .footer-content{
+        line-height: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-column {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-column {
+        width: 100%;
+    }
+
+    .small-screen-hide{
+        display: none;
+    }
+
+    .footer-column-heading{
+        margin: 0 0 10px 0;
+    }
+}
+
+@media (max-width:479px) and (min-width:200px) {
+    .small-size-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+.email-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
