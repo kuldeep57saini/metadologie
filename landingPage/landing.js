@@ -31,7 +31,7 @@ const servicesData = [
         id: 5,
         title: "Salesforce CPQ",
         brief_info: "Configure, price, and quote tool. Improve proposal accuracy.",
-        description: "CPQ refers to configure, price, and quote. With this, you would have a slight idea that it deals with the proposals shared with your customers. Traditional sales methods involve the manual creation of proposals, which has its drawbacks including but not limited to incorrect pricing, inaccurate discounts, or.",
+        description: "CPQ refers to configure, price, and quote. With this, you would have a slight idea that it deals with the proposals shared with your customers. Traditional sales methods involve the manual creation of proposals, which has its drawbacks including but not limited to incorrect pricing, inaccurate discounts, or some other human error.",
         imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Salesforce CPQ.png",
     },
     {
