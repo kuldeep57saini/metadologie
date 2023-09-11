@@ -36,12 +36,12 @@ class Footer extends HTMLElement{
                         <h2 class="footer-column-heading">Explore</h2>
                         <ul class="footer-font-size">
                             <li><a href="https://kuldeep57saini.github.io/metadologie">Home</a></li>
-                            <li><a href="#">Dive In</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Industries</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="https://kuldeep57saini.github.io/metadologie">Dive In</a></li>
+                            <li><a href="https://metadologie.com/Pages/aboutus.html">About Us</a></li>
+                            <li><a href="https://metadologie.com/Pages/ourServices.html">Services</a></li>
+                            <li><a href="https://metadologie.com/Pages/Industries.html">Industries</a></li>
+                            <li><a href="https://metadologie.com/Pages/careers.html">Careers</a></li>
+                            <li><a href="https://metadologie.com/Pages/contact-us.html">Contact Us</a></li>
                         </ul>
                     </div>
                     <div>
@@ -60,18 +60,18 @@ class Footer extends HTMLElement{
                     <div>
                         <h2 class="footer-column-heading">Discover</h2>
                         <ul class="footer-font-size">
-                            <li><a href="#">Expertise</a></li>
-                            <li><a href="#">Insights</a></li>
-                            <li><a href="#">Industries</a></li>  
+                            <li><a href="https://metadologie.com/Pages/Industries.html">Expertise</a></li>
+                            <li><a href="https://metadologie.com/Pages/aboutus.html">Insights</a></li>
+                            <li><a href="https://metadologie.com/Pages/Industries.html">Industries</a></li>  
                         </ul>
                     </div>
                     <div>
 
                         <h2 class="footer-column-heading">About metadologie</h2>
                         <ul class="footer-font-size">
-                            <li><a href="#">About Metadologie</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Life @ Metadologie</a></li>
+                            <li><a href="https://metadologie.com/Pages/aboutus.html">About Metadologie</a></li>
+                            <li><a href="https://metadologie.com/Pages/careers.html">Careers</a></li>
+                            <li><a href="https://metadologie.com/Pages/aboutus.html">Life @ Metadologie</a></li>
                             <li><a href="#">Privacy Policy</a></li>    
                         </ul>
                     </div>
@@ -96,7 +96,7 @@ class Footer extends HTMLElement{
                         </tr>
                         <tr>
                             <td><i class="fa fa-phone"></i></td>
-                            <td><a href="tel:9999999999">999 999 9999</a></td>
+                            <td><a href="tel:+1206-707-8600">+1 206-707-8600</a></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -127,7 +127,7 @@ class Footer extends HTMLElement{
                         </tr>
                         <tr>
                             <td><i class="fa fa-phone"></i></td>
-                            <td><a href="tel:9999999999">999 999 9999</a></td>
+                            <td><a href="tel:+12067078600">+1 206-707-8600</a></td>
                         </tr>
                         <tr>
                             <td></td>
