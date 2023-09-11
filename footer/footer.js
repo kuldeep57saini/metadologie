@@ -23,8 +23,8 @@ class Footer extends HTMLElement{
                     <div class="social-icons">
                         <a href="#" class="fa fa-facebook"></a>
                         <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-linkedin"></a>
-                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/company/metadologie/" class="fa fa-linkedin"></a>
+                        <a href="https://instagram.com/metadologie" class="fa fa-instagram"></a>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@ class Footer extends HTMLElement{
                     <div>
                         <h2 class="footer-column-heading">Explore</h2>
                         <ul class="footer-font-size">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="https://kuldeep57saini.github.io/metadologie">Home</a></li>
                             <li><a href="#">Dive In</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Services</a></li>
