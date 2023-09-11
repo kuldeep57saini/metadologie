@@ -36,31 +36,31 @@ class Header extends HTMLElement {
                 <nav class="nav">
                     <ul>
                         <li>
-                            <a class="nav-links">Home</a>
+                            <a href="https://kuldeep57saini.github.io/metadologie" class="nav-links">Home</a>
                             <span class="hover-icon"></span>
                         </li>
                         <li>
-                            <a class="nav-links">Dive In</a>
+                            <a  href="https://kuldeep57saini.github.io/metadologie" class="nav-links">Dive In</a>
                             <span class="hover-icon"></span>
                         </li>
                         <li>
-                            <a class="nav-links">About Us</a>
+                            <a href="https://metadologie.com/Pages/aboutus.html" class="nav-links">About Us</a>
                             <span class="hover-icon"></span>
                         </li>
                         <li>
-                            <a class="nav-links">Services</a>
+                            <a href="https://metadologie.com/Pages/ourServices.html" class="nav-links">Services</a>
                             <span class="hover-icon"></span>
                         </li>
                         <li>
-                            <a class="nav-links">Industries</a>
+                            <a href="https://metadologie.com/Pages/Industries.html" class="nav-links">Industries</a>
                             <span class="hover-icon"></span>
                         </li>
                         <li>
-                            <a class="nav-links">Career</a>
+                            <a href="https://metadologie.com/Pages/careers.html" class="nav-links">Career</a>
                             <span class="hover-icon"></span>
                         </li>
                         <li>
-                            <a class="nav-links">Contact Us</a>
+                            <a href="https://metadologie.com/Pages/contact-us.html" class="nav-links">Contact Us</a>
                             <span class="hover-icon"></span>
                         </li>
                     </ul>
