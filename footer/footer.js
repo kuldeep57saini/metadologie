@@ -141,6 +141,7 @@ class Footer extends HTMLElement{
 
                 </div>
             </div>
+            </div>
                 <div class='lower-footer'>
                 <p>© Copyrights Metadologie
                 2023. Salesforce,
@@ -148,7 +149,6 @@ class Footer extends HTMLElement{
                 trademarks
                 are property of their respective owners.</p>
                 </div>
-        </div>
         `;
     }
 }
