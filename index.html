@@ -91,13 +91,15 @@
                                         </div>
                                         <div class="form-row flex justify-between">
                                             <div class="form-element half-width">
-                                                <input class="input-field" placeholder="Email" id="email" maxlength="80"
-                                                    name="email" size="20" type="text" required />
+                                                <label class="error-label">*</label>
+                                                <input class="input-field" placeholder="Email" id="email" oninput='handleEmailInput(this)' maxlength="80"
+                                                name="email" size="20" type="text" required />
                                                 <label class="error-label"></label>
                                             </div>
-                                            <div class="form-element half-width">
-                                                <input class="input-field" placeholder="Mobile Number" id="title"
-                                                    name="title" maxlength="40" size="20" type="text" />
+                                            <div class="form-element half-width" style="display: flex;
+                                            align-items: end;">
+                                                <input class="input-field" placeholder="Mobile Number" oninput="mobileValidate(this)" 
+                                                    name="title" maxlength="10" type="text" />
                                                 <label class="error-label"></label>
                                             </div>
                                         </div>
@@ -130,7 +132,7 @@
                                     <footer class="form-footer">
                                         <div class="cancel-button" title="Cancel" style="color: rgb(34, 59, 139);"
                                             onclick="closeModal()">Cancel</div>
-                                        <input class="submit-button" type="submit" name="submit" onclick="submitForm()">
+                                        <input class="submit-button" type="submit" name="submit" onclick="submitForm()" disabled>
                                     </footer>
                                 </div>
                             </form>
@@ -172,14 +174,14 @@
                     </div>
                     <div class="form-group half-width">
                         <label for="Mobile">Mobile</label>
-                        <input placeholder="Mobile Number" id="mobile" name="mobile" maxlength="40" size="20"
-                            type="number" />
+                        <input placeholder="Mobile Number" id="mobile" oninput="mobileValidate(this)" name="mobile" maxlength="40" size="20"
+                            type="text" max="10"/>
                     </div>
                     <div class="form-group half-width">
                         <label for="email">Email <span style="color:rgb(235, 42, 42);">*</span> </label>
-                        <input placeholder="Email" placeholder="Email" id="email" maxlength="80" name="email" size="20"
+                        <input placeholder="Email" placeholder="Email" id="email" maxlength="80" name="email" oninput="requestFormEmailInput(this)" size="20"
                             type="text" required />
-                        <label class="error-label" />
+                        <label class="error-label" ></label>
                     </div>
 
                     <div class="half-width select-box">
@@ -224,7 +226,7 @@
                             type="text"></textarea>
                     </div>
                     <div class="submit-button-box form-group full-width">
-                        <button class="submit-button" type="submit" name="submit">Submit</button>
+                        <button class="submit-button" type="submit" name="submit" disabled>Submit</button>
                     </div>
                 </form>
             </section>
