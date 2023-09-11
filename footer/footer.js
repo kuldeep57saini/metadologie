@@ -35,8 +35,8 @@ class Footer extends HTMLElement{
                     <div>
                         <h2 class="footer-column-heading">Explore</h2>
                         <ul class="footer-font-size">
-                            <li><a href="https://kuldeep57saini.github.io/metadologie">Home</a></li>
-                            <li><a href="https://kuldeep57saini.github.io/metadologie">Dive In</a></li>
+                            <li><a href="https://www.metadologie.com">Home</a></li>
+                            <li><a href="https://www.metadologie.com/">Dive In</a></li>
                             <li><a href="https://metadologie.com/Pages/aboutus.html">About Us</a></li>
                             <li><a href="https://metadologie.com/Pages/ourServices.html">Services</a></li>
                             <li><a href="https://metadologie.com/Pages/Industries.html">Industries</a></li>
