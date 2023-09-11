@@ -96,7 +96,7 @@ class Footer extends HTMLElement{
                         </tr>
                         <tr>
                             <td><i class="fa fa-phone"></i></td>
-                            <td><a href="tel:+1206-707-8600">+1 206-707-8600</a></td>
+                            <td><a href="tel:+919529329921">+91 9529329921</a></td>
                         </tr>
                         <tr>
                             <td></td>
