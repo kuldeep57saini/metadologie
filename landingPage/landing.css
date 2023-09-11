@@ -174,10 +174,10 @@ section.integration {
     margin-bottom: 5%;
 }
 
-.integration-card-image img {
+/* .integration-card-image img {
     height: auto !important;
     width: auto;
-}
+} */
 
 .integration-card-image::after {
     content: '';
