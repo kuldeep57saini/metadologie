@@ -90,7 +90,7 @@ class Footer extends HTMLElement{
                         </tr>
                         <tr>
                             <td></td>
-                            <td> <a href="https://goo.gl/maps/7kykkfihHKtJrqke9">94/5, Madhyam Marg, Ward 27, Mansarover Sector 8 ,
+                            <td> <a href="https://goo.gl/maps/P9W7sJ3uaXRdhDSU6">94/5, Madhyam Marg, Ward 27, Mansarover Sector 8 ,
                                     Mansarover,
                                     Jaipur, Rajasthan, 302020, India</a></td>
                         </tr>
