@@ -124,7 +124,7 @@ generateServiceCards();
 
 const integrationData = [
     {
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Esker.png",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Esker.svg",
         altText: "Esker",
         content: "Esker is a global cloud platform built to unlock strategic value for Finance, Procurement and Customer Service professionals and strengthen collaboration between companies by automating the cash conversion cycle."
     },
@@ -134,32 +134,32 @@ const integrationData = [
         content: "Digitize With AR automation provides a business with more accurate data, allowing a company to improve its customer outreach by automatically generating invoices, emailing payment reminders and providing multiple payment options."
     },
     {
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Authvia.png",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Authvia.svg",
         altText: "Autavia",
         content: "Autavia is a comprehensive aviation maintenance and inventory management software designed to help aviation businesses streamline operations and improve efficiency."
     },
     {
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Dun_and_Bradstreet.png",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Dun_and_Bradstreet.svg",
         altText: "Dun & Bradstreet",
         content: "Dun & Bradstreet offers data-driven solutions to help businesses make informed decisions, manage risk, and build valuable customer relationships."
     },
     {
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/DocuSign.png",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/DocuSign.svg",
         altText: "DocuSign",
         content: "DocuSign is a leading electronic signature and contract management platform, empowering organizations to digitize and automate agreements and approvals."
     },
     {
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Zenkraft.png",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Zenkraft.svg",
         altText: "Zenkraft",
         content: "Zenkraft provides shipping solutions that integrate with Salesforce, enabling businesses to manage shipping, tracking, and returns seamlessly."
     },
     {
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Visual_Compliance.png",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Visual_Compliance.svg",
         altText: "Visual Compliance",
         content: "Visual Compliance offers export compliance solutions, helping businesses ensure compliance with international trade regulations and sanctions."
     },
     {
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/AvSight.png",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/AvSight.svg",
         altText: "AvSight",
         content: "AvSight is an aviation MRO software designed to enhance aircraft maintenance and inventory management for aviation companies."
     }
