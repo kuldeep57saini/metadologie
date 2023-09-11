@@ -27,7 +27,7 @@ class Header extends HTMLElement {
         this.innerHTML = `
         <div class="header">
             <div class="company-logo">
-                <a href="https://kuldeep57saini.github.io/metadologie">
+                <a href="https://www.metadologie.com">
                     <img src="https://www.metadologie.com/media/Home%20page/Metadologie%20Icon.png" alt="logo">
                 </a>
             </div>
@@ -36,11 +36,11 @@ class Header extends HTMLElement {
                 <nav class="nav">
                     <ul>
                         <li>
-                            <a href="https://kuldeep57saini.github.io/metadologie" class="nav-links">Home</a>
+                            <a href="https://www.metadologie.com" class="nav-links">Home</a>
                             <span class="hover-icon"></span>
                         </li>
                         <li>
-                            <a  href="https://kuldeep57saini.github.io/metadologie" class="nav-links">Dive In</a>
+                            <a  href="https://www.metadologie.com" class="nav-links">Dive In</a>
                             <span class="hover-icon"></span>
                         </li>
                         <li>
