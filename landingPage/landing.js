@@ -3,21 +3,21 @@ const servicesData = [
         id: 1,
         title: "B2B Commerce",
         brief_info: "Online store for B2B transactions. Specializes in creating e-commerce stores.",
-        description: "Your online store for B2B transactions. B2B Commerce is another feather in the cap of Salesforce, which specializes in providing businesses to create an online e-commerce store. Usual B2C interactions are not heavy when it comes to transactions. Whereas, when businesses are interacting with each other.",
+        description: "B2B Commerce is another feather in the cap of Salesforce, which specializes in providing businesses to create an online e-commerce store. Usual B2C interactions are not heavy when it comes to transactions. Whereas, when businesses are interacting with each other, they talk in bulk. Be it bulk quantities or prices, which can amount to millions in a single transaction. Thus, they require an e-commerce website where they can see the entire catalog and do simple add-to-cart transactions.",
         imageSrc: "https://kuldeep57saini.github.io/metadologie/images/B2B_Commerce.jpg",
     },
     {
         id: 2,
         title: "Einstein Bots",
         brief_info: "Digital assistants for customer interactions. Quick answers for busy agents.",
-        description: "Bots, a term derived from robots, is a digital way of transforming human interaction. Usually, your agents are busy resolving critical issues and maybe at that moment, a customer is looking for some straightforward answers.",
+        description: "Bots, a term derived from robots, is a digital way of transforming human interaction. Usually, your agents are busy resolving critical issues and maybe at that moment, a customer is looking for some straightforward answer.",
         imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Einstein bots.png",
     },
     {
         id: 3,
         title: "Service Cloud",
         brief_info: "Customer service management. Streamline support for sold products/services.",
-        description: "Service Cloud is another vertical of Salesforce which deals in customer service management. Once a product or service is sold, it becomes evident to provide industry-leading customer service. However, at times with the number of incoming calls, emails, or texts, it can be a tedious task to manage everything on time.",
+        description: "Service Cloud is another vertical of Salesforce which deals in customer service management. Once a product or service is sold, it becomes evident to provide industry-leading customer service. However, at times with the number of incoming calls, or emails or texts, it can be a tedious task to manage everything on time.",
         imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Service Cloud.png",
     },
     {
@@ -31,14 +31,14 @@ const servicesData = [
         id: 5,
         title: "Salesforce CPQ",
         brief_info: "Configure, price, and quote tool. Improve proposal accuracy.",
-        description: "CPQ refers to configure, price, and quote. With this, you would have a slight idea that it deals with the proposals shared with your customers. Traditional sales methods involve the manual creation of proposals, which has its drawbacks including but not limited to incorrect pricing, inaccurate discounts, or some other human error.",
+        description: "CPQ refers to configure, price and quote. With this, you would have a slight idea that it deals with the proposals shared with your customers. Traditional sales methods involve the manual creation of proposals, which has its drawbacks including but not limited to, incorrect pricing, inaccurate discounts, or some other human error. With Salesforce CPQ, you are eliminating manual errors along with speeding up the process from quote to finalizing the deal.",
         imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Salesforce CPQ.png",
     },
     {
         id: 6,
         title: "Sales Cloud",
         brief_info: "Automated sales management. Centralize scattered data.",
-        description: "Sales Cloud is an automated sales management tool, which assembles all the scattered data over different devices in one place. Whether you are a salesperson or a sales manager, you have all the information handy on your laptop or even mobile.",
+        description: "Sales Cloud is an automated sales management tool, which assembles all the scattered data over different devices in one place. Whether you are a salesperson or a sales manager, you have all the information handy on your laptop or even mobile. With the help of Sales Cloud, you get a streamlined sales process, which can be customized and automated at your convenience.",
         imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Sales cloud.png",
     },
     {
@@ -52,7 +52,7 @@ const servicesData = [
         id: 8,
         title: "Marketing Cloud",
         brief_info: "CRM for marketing segments. Targeted marketing for more business.",
-        description: "Salesforce Marketing Cloud is a part of the Salesforce CRM suite, which deals with the marketing segment of a company business. With targeted marketing keeping the customer journey in focus and generating interactions with customers can help your marketing team in generating more business.",
+        description: "Salesforce Marketing Cloud is a part of the Salesforce CRM suite, which deals with the marketing segment of a company’s business. With targeted marketing, keeping the customer journey in focus and generating interactions with customers can help your marketing team in generating more business.",
         imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Marketing Cloud.png",
     },
     {
@@ -66,7 +66,7 @@ const servicesData = [
         id: 10,
         title: "Field Service Lightning",
         brief_info: "Powerful tool for field services. Retain customers with on-time service.",
-        description: "Field Service Lightning allows you to excel in the area of field services provided to your customers. Facilitating your customers with on-time, accurate and hassle-free service is what helps you in retaining the customers.",
+        description: "Field Service Lightning allows you to excel in the area of field services provided to your customers. Facilitating your customers with on-time, accurate and hassle-free service is what helps you in retaining the customers. This is the key to dominating any vertical of the market.",
         imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Salesforce CPQ.png",
     }
 ];
