@@ -141,6 +141,13 @@ class Footer extends HTMLElement{
 
                 </div>
             </div>
+                <div class='lower-footer'>
+                <p>© Copyrights Metadologie
+                2023. Salesforce,
+                AppExchange, Sales Cloud, Service Cloud, and others are trademarks of <a rel="noopener" target="_blank" href="https://salesforce.com">salesforce.com</a>, inc.. All other
+                trademarks
+                are property of their respective owners.</p>
+                </div>
         </div>
         `;
     }
