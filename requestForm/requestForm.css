@@ -341,6 +341,12 @@
 
   .form-element{
     padding: 3% 0;
+    text-align: start;
+  }
+
+  label.error-label{
+    color: red;
+    padding-left: 1%;
   }
 
   .half-width{
@@ -365,4 +371,9 @@
         display:flex;
         justify-content: center;
     }
+}
+
+input.submit-button:disabled, 
+button.submit-button:disabled{
+  background: gray;
 }
