@@ -256,3 +256,34 @@ function validateForm() {
         return false;
     }
 }
+// Email Validation function
+
+const isEmail = (email) => {
+    const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (!String(email).toLowerCase().match(emailRegex)) {
+        return 'invalidEmail';
+    }
+    return '';
+}
+
+function handleEmailInput(input) {
+    let error = isEmail(input.value);
+    let submitButton = document.getElementsByClassName("submit-button")[0];
+    submitButton.disabled = (error != '');
+    let errorBox = input.parentNode.lastElementChild;
+    errorBox.innerHTML = error;
+}
+
+function requestFormEmailInput(input) {
+    let error = isEmail(input.value);
+    let errorBox = input.parentNode.lastElementChild;
+    errorBox.innerHTML = error;
+    let submitButton = document.getElementsByClassName("submit-button")[1];
+    submitButton.disabled = (error != '');
+}
+
+
+function mobileValidate(input) {
+    let inputValue = input.value;
+    input.value = inputValue.replace(/[^0-9\s]/g, '');
+}
