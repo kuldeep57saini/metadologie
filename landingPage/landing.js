@@ -129,7 +129,7 @@ const integrationData = [
         content: "Esker is a global cloud platform built to unlock strategic value for Finance, Procurement and Customer Service professionals and strengthen collaboration between companies by automating the cash conversion cycle."
     },
     {
-        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/YP.png",
+        imageSrc: "https://kuldeep57saini.github.io/metadologie/images/Yay Pay.svg",
         altText: "AR",
         content: "Digitize With AR automation provides a business with more accurate data, allowing a company to improve its customer outreach by automatically generating invoices, emailing payment reminders and providing multiple payment options."
     },
