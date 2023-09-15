@@ -7,8 +7,9 @@ class ChatBot extends HTMLElement {
         this.innerHTML = `
         <style>
             .chat-bot {
-                background-color: #f0f0f0;
-                border: 1px solid #ccc;
+                position: fixed;
+                bottom: 20px;
+                right: 22px;
                 padding: 10px;
                 border-radius: 5px;
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
