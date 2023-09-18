@@ -353,7 +353,7 @@
                     cursor: pointer;
                 }
 
-                .loading::after{
+                .loading::after {
                     content: 'loading';
                     position: absolute;
                     display: grid;
@@ -372,21 +372,23 @@
 
             <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
             <script type='text/javascript'>
-                
+
                 //start spinner js for chat-bot
                 function updateElementPresence() {
                     let showSpinner = false;
                     const message = document.querySelector('.message');
-                    if(message){
+                    if (message) {
                         console.log(message.innerHTML);
                         showSpinner = message.innerHTML == 'Loading';
                     }
-                    if(showSpinner){
-                        let helpButton = document.querySelector('.helpButtonEnabled');
-                        helpButton.classList.add('loading');
-                    }
-                    else{
-                        helpButton.classList.remove('loading');
+                    let helpButton = document.querySelector('.helpButtonEnabled');
+                    if(helpButton){
+                        if (showSpinner) {
+                            helpButton.classList.add('loading');
+                        }
+                        else {
+                            helpButton.classList.remove('loading');
+                        }
                     }
                 }
 
