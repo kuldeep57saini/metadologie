@@ -301,14 +301,16 @@
 </script>
 		<!-- Add your company logo -->
 <img src="https://kuldeep57saini.github.io/metadologie/images/Sales cloud.png" alt="Company Logo" style="cursor: pointer;" id="customChatLogo" />
-        <script>
-		document.getElementById("customChatLogo").addEventListener("click", function() {
-    let defaultChatButton = document.querySelector("#embeddedServiceHelpButton .helpButton .uiButton");
-    if (defaultChatButton) {
-        defaultChatButton.click();
-    }
-});
-	</script>
+            // Attempt to bind the click event to the logo once the Salesforce button is available
+    var bindClickToLogo = setInterval(function() {
+        let defaultChatButton = document.querySelector("#embeddedServiceHelpButton .helpButton .uiButton");
+        if (defaultChatButton) {
+            document.getElementById("customChatLogo").addEventListener("click", function() {
+                defaultChatButton.click();
+            });
+            clearInterval(bindClickToLogo);  // Clear the interval once binding is successful
+        }
+    }, 100
 	</div>
     </main>
     <footer>
