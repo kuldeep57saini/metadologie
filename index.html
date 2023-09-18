@@ -356,10 +356,10 @@
                 
                 .embeddedServiceIcon,
                 .message{
-                    display: none;
+                    display: none !important;
                 }
                 .loading {
-                    display: block;
+                    display: block !important;
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
@@ -387,14 +387,16 @@
                     const message = document.querySelector('.message');
                     const chatBox = document.querySelector('#sidebarDialogAssistiveText');
 
-                    helpButton.addEventListener('click',()=>{
-                        if(message){
-                            message.classList.add('loading');
-                        }
-                        else{
-                            message.classList.remove('loading');
-                        }
-                    })
+                    if(helpButton){
+                        helpButton.addEventListener('click',()=>{
+                            if(message){
+                                message.classList.add('loading');
+                            }
+                            else{
+                                message.classList.remove('loading');
+                            }
+                        })
+                    }
                     
                     if(chatBox){
                         message.classList.add('loading');
