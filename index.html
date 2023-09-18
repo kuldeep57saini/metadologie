@@ -257,6 +257,16 @@
                     box-shadow: 0px 0px 10px #bfbfbf;
                     background-size: 60% 55% !important;
                     background-position: center;
+                    transition: all 1s ease-in-out;
+                }
+
+                .embeddedServiceHelpButton .helpButton .uiButton:hover {
+                    box-shadow: 0px 0px 10px #acacac;
+                    scale: 1.1;
+                }
+
+                .embeddedServiceHelpButton .helpButton .helpButtonEnabled:hover::before {
+                    opacity: 0 !important;
                 }
 
 
@@ -287,16 +297,19 @@
                     1% {
                         transform: translateY(8px);
                     }
-                    
+
                     2% {
                         transform: translateY(0);
                     }
+
                     3% {
                         transform: translateY(-8px);
                     }
+
                     4% {
                         transform: translateY(0);
                     }
+
                     100% {
                         transform: translateY(0);
                     }
@@ -328,6 +341,34 @@
 
             <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
             <script type='text/javascript'>
+
+
+                //start spinner js for chat-bot
+                let isElementInDOM = false;
+
+                function updateElementPresence() {
+                    const element = document.getElementById('sidebarDialogAssistiveText');
+                    if (element) {
+                        isElementInDOM = true;
+                    } else {
+                        isElementInDOM = false;
+                    }
+                }
+
+                // Add event listeners to track changes in DOM
+                document.addEventListener('DOMContentLoaded', updateElementPresence);
+                document.addEventListener('DOMNodeInserted', updateElementPresence);
+                document.addEventListener('DOMNodeRemoved', updateElementPresence);
+
+                if (isElementInDOM) {
+                    console.log('Element is in the DOM');
+                } else {
+                    console.log('Element is not in the DOM');
+                }
+
+                //end spinner js for chat-bot
+
+
                 var initESW = function (gslbBaseURL) {
                     embedded_svc.settings.displayHelpButton = true; //Or false
                     embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
