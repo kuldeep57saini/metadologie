@@ -353,25 +353,23 @@
                     cursor: pointer;
                 }
 
-
-                .embeddedServiceIcon,
-                .message {
-                    display: none !important;
+                .loading::after {
+                    content: 'loading';
+                    position: absolute;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 5;
+                    width: 40px;
+                    height: 40px;
+                    background: white;
+                    color: black;
+                    font-size: 12px;
                 }
 
-                .loading {
-                    display: block !important;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    color: black;
-                    font-size: 14px;
-                    position: absolute;
-                    width: auto;
-                    font-size: 12px;
-                    background: white;
-                    z-index: 80;
-                    padding: 12px 0;
+                .helpButtonLabel,
+                .message{
+                    display: none !important;
                 }
             </style>
 
@@ -383,19 +381,16 @@
                 //start spinner js for chat-bot
                 function updateElementPresence() {
                     let helpButton = document.querySelector('.helpButtonEnabled');
-                    const message = document.querySelector('.message');
-                    const chatBox = document.querySelector('#sidebarDialogAssistiveText');
+                    let chatBox = document.querySelector('#sidebarDialogAssistiveText');
 
-                    if (message) {
-                        if (helpButton) {
-                            helpButton.addEventListener('click', () => {
-                                message.classList.add('loading');
-                            })
-                        }
+                    if (helpButton) {
+                        helpButton.addEventListener('click', () => {
+                            helpButton.classList.add('loading');
+                        })
+                    }
 
-                        if (chatBox) {
-                            message.classList.remove('loading');
-                        }
+                    if (chatBox) {
+                        helpButton.classList.remove('loading');
                     }
                 }
 
