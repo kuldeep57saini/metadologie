@@ -230,17 +230,22 @@
             </section>
             <!-- page form end hare -->
         <style type='text/css'>
+	
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #034DA7;
-		font-family: "Arial", sans-serif;
-		
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #034DA7;
-	}
-	#embeddedServiceHelpButton .helpButton .uiButton {
-    display: none !important; 
+    background-color: transparent !important; 
+    font-family: "Arial", sans-serif;
+    background-image: url('https://kuldeep57saini.github.io/metadologie/images/Sales cloud.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    width: 100px; /* Adjust to the width of your logo */
+    height: 100px; /* Adjust to the height of your logo */
+    border: none !important;
+    text-indent: -9999px; /* Hide text */
 }
+.embeddedServiceHelpButton .helpButton .uiButton:focus {
+    outline: none !important;
+}
+
 
 		
 </style>
@@ -304,28 +309,7 @@
     }
 </script>
 		<!-- Add your company logo -->
-<img src="https://kuldeep57saini.github.io/metadologie/images/Sales cloud.png" alt="Company Logo" style="cursor: pointer;" id="customChatLogo" />
-            <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    // Attempt to bind the click event to the logo once the Salesforce button is available
-    var bindClickToLogo = setInterval(function() {
-        let defaultChatButton = document.querySelector("#embeddedServiceHelpButton .helpButton .uiButton");
-        
-        if (defaultChatButton) {
-            console.log("Salesforce button detected!");  // Debugging
 
-            document.getElementById("customChatLogo").onclick = function() {
-                console.log("Logo clicked!");  // Debugging
-                defaultChatButton.click();
-            };
-            
-            clearInterval(bindClickToLogo);  // Clear the interval once binding is successful
-        } else {
-            console.log("Salesforce button not yet detected...");  // Debugging
-        }
-    }, 1000);  // Check every second
-});
-</script>
 	</div>
     </main>
     <footer>
