@@ -138,19 +138,20 @@ main {
     .bar::before,
     .bar::after {
         content: "";
-        width: 30px;
+        width: 20px;
         height: 3px;
         background-color: #787878;
         position: absolute;
         transition: transform 0.3s ease;
+        border-radius: 60px;
     }
 
     .bar::before {
-        top: -10px;
+        top: -6px;
     }
 
     .bar::after {
-        top: 10px;
+        top: 6px;
     }
 }
 
