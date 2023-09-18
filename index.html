@@ -290,7 +290,15 @@
 	} else {
 		initESW('https://service.force.com');
 	}
+
+	function openChat() {
+        if (window.embedded_svc) {
+            embedded_svc.launchChatWithWindow();
+        }
+    }
 </script>
+		<!-- Add your company logo -->
+<img src="URL_OF_YOUR_LOGO" alt="Company Logo" style="cursor: pointer;" onclick="openChat()" />
         </div>
     </main>
     <footer>
