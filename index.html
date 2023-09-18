@@ -367,7 +367,7 @@
                     font-size: 12px;
                 }
 
-                .helpButtonLabel,
+                .embeddedServiceIcon,
                 .message{
                     display: none !important;
                 }
@@ -390,7 +390,9 @@
                     }
 
                     if (chatBox) {
-                        helpButton.classList.remove('loading');
+                        setTimeout(()=>{
+                            helpButton.classList.remove('loading');
+                        },1000);
                     }
                 }
 
