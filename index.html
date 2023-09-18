@@ -352,6 +352,19 @@
                     margin: 0 5px;
                     cursor: pointer;
                 }
+
+                .loading::after{
+                    content: 'loading';
+                    position: absolute;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 5;
+                    width: 40px;
+                    height: 40px;
+                    background: white;
+                    color: black;
+                }
             </style>
 
 
@@ -371,11 +384,17 @@
                 //start spinner js for chat-bot
                 function updateElementPresence() {
                     let showSpinner = false;
-                    const element = document.getElementById('sidebarDialogAssistiveText');
                     const message = document.querySelector('.message');
                     if(message){
                         console.log(message.innerHTML);
                         showSpinner = message.innerHTML == 'Loading';
+                    }
+                    if(showSpinner){
+                        let helpButton = document.querySelector('.helpButtonEnabled');
+                        helpButton.classList.add('loading');
+                    }
+                    else{
+                        helpButton.classList.remove('loading');
                     }
                 }
 
