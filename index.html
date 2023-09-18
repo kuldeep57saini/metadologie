@@ -270,6 +270,7 @@
                 .embeddedServiceHelpButton .helpButton .helpButtonEnabled:active::before {
                     opacity: 0 !important;
                 }
+                
 
 
 
@@ -352,19 +353,27 @@
                     cursor: pointer;
                 }
 
-                .loading::after {
-                    content: 'loading';
-                    position: absolute;
-                    display: grid;
-                    justify-content: center;
-                    align-items: center;
-                    z-index: 5;
-                    width: 40px;
-                    height: 40px;
-                    background: white;
-                    color: black;
-                    font-size: 12px;
+                
+                .embeddedServiceIcon,
+                .message{
+                    display: none;
                 }
+                .loading {
+                    display: block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: black;
+                    font-size: 14px;
+                    position: absolute;
+                    width: auto;
+                    font-size: 12px;
+                    background: white;
+                    z-index: 80;
+                    padding: 12px 0;
+                }
+
+
             </style>
 
 
@@ -374,20 +383,24 @@
 
                 //start spinner js for chat-bot
                 function updateElementPresence() {
-                    let showSpinner = false;
-                    const message = document.querySelector('.message');
-                    if (message) {
-                        console.log(message.innerHTML);
-                        showSpinner = message.innerHTML == 'Loading';
-                    }
                     let helpButton = document.querySelector('.helpButtonEnabled');
-                    if(helpButton){
-                        if (showSpinner) {
-                            helpButton.classList.add('loading');
+                    const message = document.querySelector('.message');
+                    const chatBox = document.querySelector('#sidebarDialogAssistiveText');
+
+                    helpButton.addEventListener('click',()=>{
+                        if(message){
+                            message.classList.add('loading');
                         }
-                        else {
-                            helpButton.classList.remove('loading');
+                        else{
+                            message.classList.remove('loading');
                         }
+                    })
+                    
+                    if(chatBox){
+                        message.classList.add('loading');
+                    }
+                    else{
+                        message.classList.remove('loading');
                     }
                 }
 
