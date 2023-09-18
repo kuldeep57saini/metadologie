@@ -254,7 +254,7 @@
                     width: 4em;
                     min-width: 4em;
                     border-radius: 50px;
-                    box-shadow: 0px 0px 10px #bfbfbf;
+                    box-shadow: 0px 0px 10px #0000002e;
                     background-size: 60% 55% !important;
                     background-position: center;
 
@@ -262,7 +262,7 @@
                 }
 
                 .embeddedServiceHelpButton .helpButton .uiButton:hover {
-                    box-shadow: 0px 0px 10px #acacac;
+                    box-shadow: 0px 0px 10px #00000042;
                     scale: 1.1;
                 }
 
@@ -360,11 +360,20 @@
             <script type='text/javascript'>
 
 
+                window.onchange = ()=>{
+                    let message = document.querySelector('.message');
+                    if(message){
+                        console.log('message',message.innerHTML);
+                    }
+                }
+
                 //start spinner js for chat-bot
                 let isElementInDOM = false;
 
                 function updateElementPresence() {
                     const element = document.getElementById('sidebarDialogAssistiveText');
+                    const message = document.querySelector('.message');
+                    console.log(message.innerHTML);
                     if (element) {
                         isElementInDOM = true;
                     } else {
