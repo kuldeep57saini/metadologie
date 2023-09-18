@@ -233,10 +233,12 @@
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #034DA7;
 		font-family: "Arial", sans-serif;
+		display: none;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
 		outline: 1px solid #034DA7;
 	}
+		
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
@@ -298,8 +300,16 @@
     }
 </script>
 		<!-- Add your company logo -->
-<img src="https://kuldeep57saini.github.io/metadologie/images/Sales cloud.png" alt="Company Logo" style="cursor: pointer;" onclick="openChat()" />
-        </div>
+<img src="https://kuldeep57saini.github.io/metadologie/images/Sales cloud.png" alt="Company Logo" style="cursor: pointer;" id="customChatLogo" />
+        <script>
+		document.getElementById("customChatLogo").addEventListener("click", function() {
+    let defaultChatButton = document.querySelector("#embeddedServiceHelpButton .helpButton .uiButton");
+    if (defaultChatButton) {
+        defaultChatButton.click();
+    }
+});
+	</script>
+	</div>
     </main>
     <footer>
         <common-footer></common-footer>
