@@ -360,24 +360,22 @@
             <script type='text/javascript'>
 
 
-                window.onchange = ()=>{
+                window.onchange(()=>{
                     let message = document.querySelector('.message');
                     if(message){
                         console.log('message',message.innerHTML);
                     }
-                }
+                });
 
+                
                 //start spinner js for chat-bot
-                let isElementInDOM = false;
-
                 function updateElementPresence() {
+                    let showSpinner = false;
                     const element = document.getElementById('sidebarDialogAssistiveText');
                     const message = document.querySelector('.message');
-                    console.log(message.innerHTML);
-                    if (element) {
-                        isElementInDOM = true;
-                    } else {
-                        isElementInDOM = false;
+                    if(message){
+                        console.log(message.innerHTML);
+                        showSpinner = message.innerHTML == 'Loading';
                     }
                 }
 
@@ -385,12 +383,6 @@
                 document.addEventListener('DOMContentLoaded', updateElementPresence);
                 document.addEventListener('DOMNodeInserted', updateElementPresence);
                 document.addEventListener('DOMNodeRemoved', updateElementPresence);
-
-                if (isElementInDOM) {
-                    console.log('Element is in the DOM');
-                } else {
-                    console.log('Element is not in the DOM');
-                }
 
                 //end spinner js for chat-bot
 
