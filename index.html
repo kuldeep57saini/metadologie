@@ -257,6 +257,7 @@
                     box-shadow: 0px 0px 10px #bfbfbf;
                     background-size: 60% 55% !important;
                     background-position: center;
+                    background-color: #034DA7;
                 }
 
 
@@ -303,7 +304,7 @@
                 }
 
                 .embeddedServiceHelpButton .helpButton .uiButton:focus {
-                    outline: none !important;
+                    outline: none  !important;
                 }
 
                 .helpButton {
@@ -326,64 +327,62 @@
                 }
             </style>
 
-            <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-            <script type='text/javascript'>
-                var initESW = function (gslbBaseURL) {
-                    embedded_svc.settings.displayHelpButton = true; //Or false
-                    embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+            
 
-                    //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-                    //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type='text/javascript'>
+	var initESW = function(gslbBaseURL) {
+		embedded_svc.settings.displayHelpButton = true; //Or false
+		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
-                    //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
-                    //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
-                    // Settings for Chat
-                    //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-                    // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-                    // Returns a valid button ID.
-                    //};
-                    //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
-                    //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-                    //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
-                    embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-                    embedded_svc.settings.entryFeature = 'LiveAgent';
+		// Settings for Chat
+		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+			// Returns a valid button ID.
+		//};
+		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
 
-                    embedded_svc.init(
-                        'https://dev1-a2-dev-ed.develop.my.salesforce.com',
-                        'https://dev1-a2-dev-ed.develop.my.site.com/InternalEmployeeCommunity',
-                        gslbBaseURL,
-                        '00DDn00000ABdaX',
-                        'SHREYANSH',
-                        {
-                            baseLiveAgentContentURL: 'https://c.la1-c1-ia6.salesforceliveagent.com/content',
-                            deploymentId: '572Dn000000ldpc',
-                            buttonId: '573Dn000000lddr',
-                            baseLiveAgentURL: 'https://d.la1-c1-ia6.salesforceliveagent.com/chat',
-                            eswLiveAgentDevName: 'SHREYANSH',
-                            isOfflineSupportEnabled: false
-                        }
-                    );
-                };
+		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+		embedded_svc.settings.entryFeature = 'LiveAgent';
 
-                if (!window.embedded_svc) {
-                    var s = document.createElement('script');
-                    s.setAttribute('src', 'https://dev1-a2-dev-ed.develop.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-                    s.onload = function () {
-                        initESW(null);
-                    };
-                    document.body.appendChild(s);
-                } else {
-                    initESW('https://service.force.com');
-                }
+		embedded_svc.init(
+			'https://dev1-a2-dev-ed.develop.my.salesforce.com',
+			'https://dev1-a2-dev-ed.develop.my.site.com/InternalEmployeeCommunity',
+			gslbBaseURL,
+			'00DDn00000ABdaX',
+			'SHREYANSH',
+			{
+				baseLiveAgentContentURL: 'https://c.la1-c1-ia6.salesforceliveagent.com/content',
+				deploymentId: '572Dn000000ldpc',
+				buttonId: '573Dn000000lddr',
+				baseLiveAgentURL: 'https://d.la1-c1-ia6.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'SHREYANSH',
+				isOfflineSupportEnabled: true
+			}
+		);
+	};
 
-                function openChat() {
-                    if (window.embedded_svc) {
-                        embedded_svc.launchChatWithWindow();
-                    }
-                }
-            </script>
+	if (!window.embedded_svc) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://dev1-a2-dev-ed.develop.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
+</script>
+
+            
             <!-- Add your company logo -->
 
         </div>
