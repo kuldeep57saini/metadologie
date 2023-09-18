@@ -270,7 +270,7 @@
                 .embeddedServiceHelpButton .helpButton .helpButtonEnabled:active::before {
                     opacity: 0 !important;
                 }
-                
+
 
 
 
@@ -353,11 +353,12 @@
                     cursor: pointer;
                 }
 
-                
+
                 .embeddedServiceIcon,
-                .message{
+                .message {
                     display: none !important;
                 }
+
                 .loading {
                     display: block !important;
                     overflow: hidden;
@@ -372,8 +373,6 @@
                     z-index: 80;
                     padding: 12px 0;
                 }
-
-
             </style>
 
 
@@ -387,22 +386,16 @@
                     const message = document.querySelector('.message');
                     const chatBox = document.querySelector('#sidebarDialogAssistiveText');
 
-                    if(helpButton){
-                        helpButton.addEventListener('click',()=>{
-                            if(message){
+                    if (message) {
+                        if (helpButton) {
+                            helpButton.addEventListener('click', () => {
                                 message.classList.add('loading');
-                            }
-                            else{
-                                message.classList.remove('loading');
-                            }
-                        })
-                    }
-                    
-                    if(chatBox){
-                        message.classList.add('loading');
-                    }
-                    else{
-                        message.classList.remove('loading');
+                            })
+                        }
+
+                        if (chatBox) {
+                            message.classList.remove('loading');
+                        }
                     }
                 }
 
