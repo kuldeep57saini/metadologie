@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./header/header.css">
     <link rel="stylesheet" href="./common/common.css">
     <link rel="stylesheet" href="./requestForm/requestForm.css">
+    <link rel="stylesheet" href="./chatBot/chatBot.css">
 </head>
 
 <body>
@@ -234,253 +235,20 @@
                     </div>
                 </form>
             </section>
-            <!-- page form end hare -->
-            <style type='text/css'>
-                .embeddedServiceHelpButton .helpButton .uiButton {
-                    font-family: "Arial", sans-serif;
-                    background-image: url(https://www.metadologie.com/media/Home%20page/Metadologie%20Icon.png) !important;
-                    background-size: contain !important;
-                    background-repeat: no-repeat !important;
-                    border: none !important;
-                    animation: cta-bounce 3s ease-in-out 1, cta-shimmy 16s linear 15s infinite;
-                    position: fixed;
-                    bottom: 30px;
-                    right: 30px;
-                    justify-content: center;
-                    box-shadow: none;
-                    background: white;
-                    height: 4em;
-                    width: 4em;
-                    min-width: 4em;
-                    border-radius: 50px;
-                    box-shadow: 0px 0px 10px #0000002e;
-                    background-size: 60% 55% !important;
-                    background-position: center;
-
-                    transition: all 1s ease-in-out;
-                }
-
-                .embeddedServiceHelpButton .helpButton .uiButton:hover {
-                    box-shadow: 0px 0px 10px #00000042;
-                    scale: 1.1;
-                }
-
-                .embeddedServiceHelpButton .helpButton .helpButtonEnabled:hover::before,
-                .embeddedServiceHelpButton .helpButton .helpButtonEnabled:focus::before,
-                .embeddedServiceHelpButton .helpButton .helpButtonEnabled:active::before {
-                    opacity: 0 !important;
-                }
-
-
-
-
-                @keyframes cta-bounce {
-                    0% {
-                        transform: translateY(25px);
-                    }
-
-                    30% {
-                        transform: translateY(-25px);
-                    }
-
-                    45% {
-                        transform: translateY(0);
-                    }
-
-                    57% {
-                        transform: translateY(-7px);
-                    }
-
-                    64% {
-                        transform: translateY(0);
-                    }
-                }
-
-                @keyframes cta-shimmy {
-                    1% {
-                        transform: translateY(8px);
-                    }
-
-                    2% {
-                        transform: translateY(0);
-                    }
-
-                    3% {
-                        transform: translateY(-8px);
-                    }
-
-                    4% {
-                        transform: translateY(0);
-                    }
-
-                    100% {
-                        transform: translateY(0);
-                    }
-                }
-
-                .embeddedServiceHelpButton .helpButton .uiButton:focus {
-                    outline: none !important;
-                }
-
-                .helpButton {
-                    width: 94px !important;
-                }
-
-                .embeddedServiceHelpButton .helpButton {
-                    height: 102px !important;
-                }
-
-                .slds-icon .slds-icon-text-default .slds-icon_x-small {
-                    width: 22px !important;
-                    margin-top: 8px !important;
-                }
-
-
-
-                h2[embeddedService-chatHeader_chatHeader] {
-                    margin-top: 14px !important;
-                    font-size: 14px;
-                }
-
-                button[embeddedService-chatHeader_chatHeader] {
-                    background: none;
-                    border: none;
-                    height: 15px;
-                    min-height: 9px;
-                    width: 21px;
-                    min-width: 14px;
-                    margin: 0 5px;
-                    cursor: pointer;
-                }
-
-                .loading::after {
-                    content: 'loading';
-                    position: absolute;
-                    display: grid;
-                    justify-content: center;
-                    align-items: center;
-                    z-index: 5;
-                    width: 40px;
-                    height: 40px;
-                    background: white;
-                    color: black;
-                    font-size: 12px;
-                }
-
-                .embeddedServiceIcon,
-                .message {
-                    display: none !important;
-                }
-
-                .minimizedText .message {
-                    display: block !important;
-                }
-
-                .sidebarHeader[embeddedService-chatHeader_chatHeader] {
-                    height: 70% !important;
-                }
-
-                .showDockableContainer {
-                    margin-bottom: 17px !important;
-                }
-            </style>
-
-
-
-            <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-            <script type='text/javascript'>
-
-                //start spinner js for chat-bot
-                function updateElementPresence() {
-                    let helpButton = document.querySelector('.helpButtonEnabled');
-                    let chatBox = document.querySelector('#sidebarDialogAssistiveText');
-
-                    if (helpButton) {
-                        helpButton.addEventListener('click', () => {
-                            helpButton.classList.add('loading');
-                        })
-                    }
-
-                    if (chatBox) {
-                        setTimeout(() => {
-                            helpButton.classList.remove('loading');
-                        }, 4000);
-                    }
-                }
-
-                // Add event listeners to track changes in DOM
-                document.addEventListener('DOMContentLoaded', updateElementPresence);
-                document.addEventListener('DOMNodeInserted', updateElementPresence);
-                document.addEventListener('DOMNodeRemoved', updateElementPresence);
-
-                //end spinner js for chat-bot
-
-
-                var initESW = function (gslbBaseURL) {
-                    embedded_svc.settings.displayHelpButton = true; //Or false
-                    embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-
-                    //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-                    //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
-
-                    //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
-                    //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-
-                    // Settings for Chat
-                    //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-                    // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-                    // Returns a valid button ID.
-                    //};
-                    //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
-                    //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-                    //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-                    embedded_svc.settings.avatarImgURL = "https://lightningcx.my.site.com/contactus/resource/NF_ccare_bot/chatbotImages/bot-avatar.png"
-                    embedded_svc.settings.chatbotAvatarImgURL = 'https://lightningcx.my.site.com/contactus/resource/NF_ccare_bot/chatbotImages/bot-avatar.png'
-
-                    embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-                    embedded_svc.settings.entryFeature = 'LiveAgent';
-
-                    embedded_svc.init(
-                        'https://dev1-a2-dev-ed.develop.my.salesforce.com',
-                        'https://dev1-a2-dev-ed.develop.my.site.com/InternalEmployeeCommunity',
-                        gslbBaseURL,
-                        '00DDn00000ABdaX',
-                        'SHREYANSH',
-                        {
-                            baseLiveAgentContentURL: 'https://c.la1-c1-ia6.salesforceliveagent.com/content',
-                            deploymentId: '572Dn000000ldpc',
-                            buttonId: '573Dn000000lddr',
-                            baseLiveAgentURL: 'https://d.la1-c1-ia6.salesforceliveagent.com/chat',
-                            eswLiveAgentDevName: 'SHREYANSH',
-                            isOfflineSupportEnabled: false
-                        }
-                    );
-                };
-
-                if (!window.embedded_svc) {
-                    var s = document.createElement('script');
-                    s.setAttribute('src', 'https://dev1-a2-dev-ed.develop.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-                    s.onload = function () {
-                        initESW(null);
-                    };
-                    document.body.appendChild(s);
-                } else {
-                    initESW('https://service.force.com');
-                }
-            </script>
-
-            <!-- Add your company logo -->
-
+            
         </div>
     </main>
     <footer>
         <common-footer></common-footer>
-
+        
     </footer>
+    <!-- page form end hare -->
+    <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+    <script src="./chatBot/chatBot.js" defer></script>
+    <!-- Add your company logo -->
     <script src="./landingPage/landing.js"></script>
     <script src="./header/header.js" defer></script>
     <script src="./footer/footer.js" defer></script>
-    <script src="./chatBot/chatBot.js" defer></script>
 </body>
 
 </html>

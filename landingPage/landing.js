@@ -285,3 +285,45 @@ function mobileValidate(input) {
     let inputValue = input.value;
     input.value = inputValue.replace(/[^0-9\s]/g, '');
 }
+
+// Get a reference to the form element
+const form = document.querySelector('form');
+
+// Add an event listener to the form for when it's submitted
+form.addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+
+  // Create a FormData object to collect form data
+  const formData = new FormData(form);
+
+  // Define the URL where you want to send the form data
+  const url = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8";
+
+  // Define the fetch options for the POST request
+  const options = {
+    method: 'POST',
+    body: formData, // Use the FormData object as the request body
+  };
+
+  // Send the POST request
+  fetch(url, options)
+    .then(response => {
+      if (response.ok) {
+        // Request was successful, you can handle the response here
+        console.log("Form submitted successfully!");
+        return response.text(); // or response.json() if the response is JSON
+      } else {
+        // Request failed, handle the error here
+        console.error("Form submission failed.");
+        return Promise.reject('Form submission failed');
+      }
+    })
+    .then(data => {
+      // Handle the response data (if needed)
+      console.log("Response data:", data);
+      // You can parse the response if it's JSON or process it as needed
+    })
+    .catch(error => {
+      console.error("Error:", error);
+    });
+});
