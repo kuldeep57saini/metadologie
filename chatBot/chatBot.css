@@ -101,32 +101,32 @@
 
 h2[embeddedService-chatHeader_chatHeader] {
     margin-top: 14px !important;
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 button[embeddedService-chatHeader_chatHeader] {
-    background: none;
-    border: none;
-    height: 15px;
-    min-height: 9px;
-    width: 21px;
-    min-width: 14px;
-    margin: 0 5px;
-    cursor: pointer;
+    background: none !important;
+    border: none !important;
+    height: 15px !important;
+    min-height: 9px !important; 
+    width: 21px !important;
+    min-width: 14px !important; 
+    margin: 0 5px !important;
+    cursor: pointer !important;
 }
 
 .loading::after {
     content: 'Loading';
-    position: absolute;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
-    width: 40px;
-    height: 40px;
-    background: white;
-    color: black;
-    font-size: 12px;
+    position: absolute !important;
+    display: grid !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 5 !important;
+    width: 40px !important;
+    height: 40px !important;
+    background: white !important;
+    color: black !important;
+    font-size: 12px !important;
 }
 
 .embeddedServiceIcon,
