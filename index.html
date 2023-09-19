@@ -383,12 +383,6 @@
                 .showDockableContainer {
                     margin-bottom: 17px !important;
                 }
-
-                .avatar {
-                    background: url(https://lightningcx.my.site.com/contactus/resource/NF_ccare_bot/chatbotImages/bot-avatar.png);
-                    background-position: center;
-                    background-size: cover;
-                }
             </style>
 
 
@@ -440,6 +434,8 @@
                     //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
                     //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
                     //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+                    embedded_svc.settings.avatarImgURL = "https://lightningcx.my.site.com/contactus/resource/NF_ccare_bot/chatbotImages/bot-avatar.png"
+                    embedded_svc.settings.chatbotAvatarImgURL = 'https://lightningcx.my.site.com/contactus/resource/NF_ccare_bot/chatbotImages/bot-avatar.png'
 
                     embedded_svc.settings.enabledFeatures = ['LiveAgent'];
                     embedded_svc.settings.entryFeature = 'LiveAgent';
