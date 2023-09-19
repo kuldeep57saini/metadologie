@@ -11,13 +11,13 @@
     justify-content: center;
     box-shadow: none;
     background-color: white !important;
-    height: 4em;    
+    height: 4em !important;    
     width: 4em;
     min-width: 4em;
     border-radius: 50px !important;
     box-shadow: 0px 0px 10px #0000002e;
     background-size: 60% 55% !important;
-    background-position: center;
+    background-position: center !important;
 
     transition: all 1s ease-in-out;
 }
