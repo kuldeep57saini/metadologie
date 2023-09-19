@@ -116,7 +116,7 @@ button[embeddedService-chatHeader_chatHeader] {
 }
 
 .loading::after {
-    content: 'loading';
+    content: 'Loading';
     position: absolute;
     display: grid;
     justify-content: center;
