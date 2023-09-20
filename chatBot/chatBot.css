@@ -102,6 +102,9 @@
 h2[embeddedService-chatHeader_chatHeader] {
     margin-top: 14px !important;
     font-size: 14px !important;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 button[embeddedService-chatHeader_chatHeader] {
@@ -146,4 +149,20 @@ button[embeddedService-chatHeader_chatHeader] {
 
 .showDockableContainer {
     margin-bottom: 17px !important;
+}
+
+.sidebarHeader[embeddedService-chatHeader_chatHeader] h2[embeddedService-chatHeader_chatHeader]::before {
+    content: '';
+    background-image: url(https://www.metadologie.com/media/Home%20page/Metadologie%20Icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    padding: 1px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50px;
+    background-size: 70%;
+    background-position: center;
 }
